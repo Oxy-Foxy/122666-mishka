@@ -24,8 +24,8 @@
             <a href="cart.html">Корзина: пока пуста</a>
           </li>
         </ul>
-        <button class="page-navigation__toggle-btn"></button>
-        <button class="page-navigation__close-btn"></button>
+        <button class="page-navigation__toggle-btn">o</button>
+        <button class="page-navigation__close-btn">x</button>
       </nav>
     </header>
     <main class="page-main">
@@ -62,9 +62,9 @@
           <input class="personal-data-fieldset__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
           <label class="personal-data-fieldset__label" for="dad's-name">Отчество:</label>
           <input class="personal-data-fieldset__input" type="text" id="dad's-name" name="dad's-name" placeholder="Отчество, если желаете">
-          <label for="phone-number"></label>
+          <label for="phone-number">тел</label>
           <input type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
-          <label for="email"></label>
+          <label for="email">E-mail</label>
           <input type="email" id="email" name="email" placeholder="Ваш Email*" required>
           <label for="details">доп</label>
           <textarea  id="details" name="details" cols="30" rows="10" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
@@ -77,13 +77,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"></a>
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"></a>
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"></a>
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
           </li>
         </ul>
       </div>
