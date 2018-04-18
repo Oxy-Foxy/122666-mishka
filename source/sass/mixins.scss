@@ -1,0 +1,8 @@
+@mixin outline {
+  outline: 1px solid gray;
+}
+
+@mixin main-padding-lr {
+  padding-left: 30px;
+  padding-right: 30px;
+}
