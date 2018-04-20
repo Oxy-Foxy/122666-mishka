@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -29,8 +30,8 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__heading"></h1>
-      <p class="page-main__form-pretext"></p>
+      <h1 class="page-main__heading">Вязание на заказ</h1>
+      <p class="page-main__form-pretext">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__form order-form" action="https://echo.htmlacademy.ru">
         <fieldset class="order-form__fieldset type-fieldset">
           <legend class="type-fieldset__name">Тип</legend>
@@ -63,11 +64,11 @@
           <label class="personal-data-fieldset__label" for="dad's-name">Отчество:</label>
           <input class="personal-data-fieldset__input" type="text" id="dad's-name" name="dad's-name" placeholder="Отчество, если желаете">
           <label for="phone-number">тел</label>
-          <input type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Ваш Email*" required>
-          <label for="details">доп</label>
-          <textarea  id="details" name="details" cols="30" rows="10" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+          <input class="personal-data-fieldset__input" type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
+          <label class="personal-data-fieldset__name" for="email">E-mail</label>
+          <input class="personal-data-fieldset__input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+          <label class="personal-data-fieldset__name" for="details">доп</label>
+          <textarea  class="personal-data-fieldset__textarea" id="details" name="details" cols="30" rows="10" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
         </fieldset>
         <span class="order-form__footnote">*Поля обязательны для заполнения</span>
         <button class="order-form__order-btn main-btn" type="submit">Отправить заказ</button>
