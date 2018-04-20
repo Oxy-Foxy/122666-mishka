@@ -6,3 +6,9 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@mixin wrapper {
+width: 260px;
+padding: 0 30px;
+margin: 0 auto;
+}
