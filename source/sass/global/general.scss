@@ -22,3 +22,23 @@ body {
 .wrapper {
   @include wrapper;
 }
+
+@media (min-width: $tablet) {
+  body {
+    min-width: $tablet;
+  }
+
+  .wrapper {
+    min-width: inherit;
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    min-width: $desktop;
+  }
+
+  .wrapper {
+    min-width: inherit;
+  }
+}

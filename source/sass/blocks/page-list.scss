@@ -1,1 +1,4 @@
-// пустой файл
+.page-list {
+  @include outline;
+  @include no-list-style;
+}

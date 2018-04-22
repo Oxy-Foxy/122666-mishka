@@ -1,4 +1,6 @@
 .toys {
   background-color: $tiffany-darkerer;
   color: $white;
+
+  @include outline;
 }
