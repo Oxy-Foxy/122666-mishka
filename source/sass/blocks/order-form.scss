@@ -1,3 +1,36 @@
 .order-form {
   @include outline;
 }
+
+.order-form__fieldset {
+  @include no-fieldset-style;
+}
+
+.order-form__textarea-label,
+.order-form__textarea {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+
+  .order-form__textarea-fieldset {
+    display: flex;
+  }
+
+  .order-form__textarea-label {
+    width: 167px;
+  }
+
+  .order-form__textarea {
+    flex-grow: 1;
+  }
+
+  .order-form__submit {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__footnote {
+    order: 1;
+  }
+}

@@ -1,0 +1,22 @@
+.contact-data-fieldset {
+  @include outline;
+}
+
+.contact-data-fieldset__input,
+.contact-data-fieldset__label {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .contact-data-fieldset__element {
+    display: flex;
+  }
+
+  .contact-data-fieldset__label {
+    width: 167px;
+  }
+
+  .contact-data-fieldset__input {
+    flex-grow: 1;
+  }
+}

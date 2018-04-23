@@ -5,7 +5,7 @@
 .social__list {
   @include no-list-style;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .social__item {

@@ -1,3 +1,33 @@
 .color-fieldset {
   @include outline;
 }
+
+.color-fieldset__label {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .color-fieldset {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .color-fieldset__fieldset {
+    display: flex;
+  }
+
+  .color-fieldset__name {
+    width: 167px;
+  }
+
+  .color-fieldset__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 72px;
+  }
+
+  .color-fieldset__label {
+    width: 250px;
+  }
+}

@@ -42,44 +42,80 @@
       <p class="page-main__form-pretext">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__form order-form" action="https://echo.htmlacademy.ru">
         <fieldset class="order-form__fieldset type-fieldset">
-          <legend class="type-fieldset__name">Тип</legend>
-          <input class="type-fieldset__input" type="radio" id="accessory" name="type" checked>
-          <label class="type-fieldset__label" for="accessory">Аксессуар для интерьера</label>
-          <input class="type-fieldset__input" type="radio" id="toy" name="type">
-          <label class="type-fieldset__label" for="toy">Детская игрушка</label>
+          <div class="type-fieldset__fieldset">
+            <legend class="type-fieldset__name">Тип</legend>
+            <div class="type-fieldset__form">
+              <label class="type-fieldset__label" for="accessory">
+                <input class="type-fieldset__input" type="radio" id="accessory" name="type" checked>Аксессуар для интерьера
+              </label>
+              <label class="type-fieldset__label" for="toy">
+                <input class="type-fieldset__input" type="radio" id="toy" name="type">Детская игрушка
+              </label>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="order-form__fieldset color-fieldset">
-          <legend class="color-fieldset__name">Цвет</legend>
-          <input class="color-fieldset__input" type="checkbox" id="white" name="white" checked>
-          <label class="color-fieldset__label" for="white">Белый</label>
-          <input class="color-fieldset__input" type="checkbox" id="gray" name="gray" checked>
-          <label class="color-fieldset__label" for="gray">Серый</label>
-          <input class="color-fieldset__input" type="checkbox" id="tiffany" name="tiffany">
-          <label class="color-fieldset__label" for="tiffany">"Тиффани"</label>
-          <input class="color-fieldset__input" type="checkbox" id="black" name="black">
-          <label class="color-fieldset__label" for="black">Чёрный</label>
-          <input class="color-fieldset__input" type="checkbox" id="pink" name="pink">
-          <label class="color-fieldset__label" for="pink">Розовый</label>
-          <input class="color-fieldset__input" type="checkbox" id="orange" name="orange">
-          <label class="color-fieldset__label" for="orange">Оранжевый</label>
+          <div class="color-fieldset__fieldset">
+            <legend class="color-fieldset__name">Цвет</legend>
+            <div class="color-fieldset__form">
+              <label class="color-fieldset__label" for="white">
+                <input class="color-fieldset__input" type="checkbox" id="white" name="white" checked>Белый
+              </label>
+              <label class="color-fieldset__label" for="gray">
+                <input class="color-fieldset__input" type="checkbox" id="gray" name="gray" checked>Серый
+              </label>
+              <label class="color-fieldset__label" for="tiffany">
+                <input class="color-fieldset__input" type="checkbox" id="tiffany" name="tiffany">"Тиффани"
+              </label>
+              <label class="color-fieldset__label" for="black">
+                <input class="color-fieldset__input" type="checkbox" id="black" name="black">Чёрный
+              </label>
+              <label class="color-fieldset__label" for="pink">
+                <input class="color-fieldset__input" type="checkbox" id="pink" name="pink">Розовый
+              </label>
+              <label class="color-fieldset__label" for="orange">
+                <input class="color-fieldset__input" type="checkbox" id="orange" name="orange">Оранжевый
+              </label>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="order-form__fieldset personal-data-fieldset">
-          <legend class="personal-data-fieldset__name">фио</legend>
-          <label class="personal-data-fieldset__label" for="first-name">Имя:</label>
-          <input class="personal-data-fieldset__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
-          <label class="personal-data-fieldset__label" for="last-name">Фамилия:</label>
-          <input class="personal-data-fieldset__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
-          <label class="personal-data-fieldset__label" for="dad's-name">Отчество:</label>
-          <input class="personal-data-fieldset__input" type="text" id="dad's-name" name="dad's-name" placeholder="Отчество, если желаете">
-          <label for="phone-number">тел</label>
-          <input class="personal-data-fieldset__input" type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
-          <label class="personal-data-fieldset__name" for="email">E-mail</label>
-          <input class="personal-data-fieldset__input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
-          <label class="personal-data-fieldset__name" for="details">доп</label>
-          <textarea  class="personal-data-fieldset__textarea" id="details" name="details" cols="30" rows="10" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+          <div class="personal-data-fieldset__fieldset">
+            <legend class="personal-data-fieldset__name">фио</legend>
+            <div class="personal-data-fieldset__form">
+              <div class="personal-data-fieldset__form-element">
+                <label class="personal-data-fieldset__label" for="first-name">Имя:</label>
+                <input class="personal-data-fieldset__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="personal-data-fieldset__form-element">
+                <label class="personal-data-fieldset__label" for="last-name">Фамилия:</label>
+                <input class="personal-data-fieldset__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="personal-data-fieldset__form-element">
+                <label class="personal-data-fieldset__label" for="dad's-name">Отчество:</label>
+                <input class="personal-data-fieldset__input" type="text" id="dad's-name" name="dad's-name" placeholder="Отчество, если желаете">
+              </div>
+            </div>
+          </div>
         </fieldset>
-        <span class="order-form__footnote">*Поля обязательны для заполнения</span>
-        <button class="order-form__order-btn main-btn" type="submit">Отправить заказ</button>
+        <fieldset class="order-form__fieldset contact-data-fieldset">
+          <div class="contact-data-fieldset__element">
+            <label class="contact-data-fieldset__label" for="phone-number">тел</label>
+            <input class="contact-data-fieldset__input" type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
+          </div>
+          <div class="contact-data-fieldset__element">
+            <label class="contact-data-fieldset__label" for="email">E-mail</label>
+            <input class="contact-data-fieldset__input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+          </div>
+        </fieldset>
+        <div class="order-form__textarea-fieldset">
+          <label class="order-form__textarea-label" for="details">доп</label>
+          <textarea  class="order-form__textarea" id="details" name="details" cols="30" rows="5" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+        </div>
+        <div class="order-form__submit">
+          <span class="order-form__footnote">*Поля обязательны для заполнения</span>
+          <button class="order-form__order-btn main-btn" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </main>
     <footer class="page-footer wrapper">

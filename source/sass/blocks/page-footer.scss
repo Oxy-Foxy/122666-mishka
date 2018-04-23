@@ -4,9 +4,23 @@
   @include outline;
 }
 
+.page-footer__image {
+  display: none;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media (min-width: $tablet) {
   .page-footer {
     display: flex;
     justify-content: space-between;
   }
+
+  .page-footer__image {
+    display: block;
+  }
+
 }
