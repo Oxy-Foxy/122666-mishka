@@ -1,4 +1,7 @@
 .goods-list {
   @include outline;
   @include no-list-style;
+
+  display: flex;
+  flex-direction: column;
 }

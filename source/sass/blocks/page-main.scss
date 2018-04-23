@@ -1,3 +1,8 @@
 .page-main {
     @include outline;
 }
+
+.page-main__manufacturing-process {
+  display: flex;
+  flex-direction: column;
+}

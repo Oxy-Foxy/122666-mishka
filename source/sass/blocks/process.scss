@@ -1,3 +1,39 @@
 .process {
   @include outline;
 }
+
+.process__heading {
+  margin: 0;
+}
+
+.process__video-link {
+  display: block;
+  width: 260px;
+  height: 150px;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet) {
+  .process__video-link {
+    width: 668px;
+    height: 455px;
+    background-image: url(../img/video-tablet@1x.jpg);
+  }
+
+  .process__video-icon {
+    order: 1;
+  }
+
+  .process__heading {
+    order: 2;
+  }
+
+  .process__text {
+    order: 3;
+  }
+
+  .process__make-order {
+    order: 4;
+  }
+}
