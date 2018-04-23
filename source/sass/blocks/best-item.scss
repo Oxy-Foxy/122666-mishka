@@ -1,3 +1,35 @@
 .best-item {
   @include outline;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.best-item__heading {
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .best-item__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .best-item__content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .best-item__content-description,
+  .best-item__image,
+  .best-item__get-order {
+    width: 334px;
+  }
+
+  .best-item__image {
+    order: 4;
+  }
+
 }

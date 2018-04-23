@@ -2,3 +2,11 @@
   @include outline;
   @include no-list-style;
 }
+
+@media (min-width: $tablet) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

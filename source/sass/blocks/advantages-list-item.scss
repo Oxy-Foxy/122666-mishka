@@ -1,3 +1,9 @@
 .advantages-list-item {
   @include outline;
 }
+
+@media (min-width: $tablet) {
+  .advantages-list-item {
+    width: 334px;
+  }
+}

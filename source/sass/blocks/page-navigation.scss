@@ -4,3 +4,23 @@
 
   @include outline;
 }
+
+.page-navigation__span {
+  display: none;
+}
+
+
+@media (min-width: $tablet) {
+  .page-navigation {
+    flex-grow: 1;
+  }
+
+  .page-navigation__close-btn,
+  .page-navigation__toggle-btn {
+    display: none;
+  }
+
+  .page-navigation__span {
+    display: block;
+  }
+}

@@ -1,3 +1,12 @@
 .contact-items {
   @include outline;
 }
+
+@media (min-width: $tablet) {
+  .contact-items {
+    display: flex;
+  }
+  .contact-items-row {
+    width: 334px;
+  }
+}

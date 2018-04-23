@@ -2,5 +2,11 @@
   background-color: $bg-color-gray;
 
   @include outline;
-  @include main-padding-lr;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

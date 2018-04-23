@@ -1,7 +1,21 @@
 .contacts {
+  @include outline;
+}
+
+.contacts__heading {
+  margin: 0;
+}
+
+.contacts__map {
+  min-width: $mobile;
+  height: 458px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
 
-  @include outline;
+@media (min-width: $tablet) {
+  .contacts__map {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
 }

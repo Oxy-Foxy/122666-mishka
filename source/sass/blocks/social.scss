@@ -1,3 +1,15 @@
 .social {
   @include outline;
 }
+
+.social__list {
+  @include no-list-style;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
