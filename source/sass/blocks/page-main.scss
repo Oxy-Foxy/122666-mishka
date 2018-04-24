@@ -10,3 +10,10 @@
 .page-main__heading {
   margin: 0;
 }
+
+@media (min-width: $desktop) {
+  .page-main__manufacturing-process {
+    flex-wrap: wrap;
+    height: 454px;
+  }
+}

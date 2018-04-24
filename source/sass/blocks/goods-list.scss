@@ -5,3 +5,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $desktop) {
+  .goods-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

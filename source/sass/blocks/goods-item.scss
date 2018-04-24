@@ -31,5 +31,10 @@
   .goods-item__image-link {
     width: 50%;
   }
+}
 
+@media (min-width: $desktop) {
+  .goods-item {
+    width: 348px;
+  }
 }

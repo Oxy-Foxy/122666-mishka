@@ -21,10 +21,6 @@
     background-image: url(../img/video-tablet@1x.jpg);
   }
 
-  .process__video-icon {
-    order: 1;
-  }
-
   .process__heading {
     order: 2;
   }
@@ -35,5 +31,19 @@
 
   .process__make-order {
     order: 4;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .process__heading,
+  .process__text,
+  .process__make-order {
+    width: 350px;
+  }
+
+  .process__video-link {
+    width: 700px;
+    height: 454px;
   }
 }
