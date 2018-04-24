@@ -7,3 +7,9 @@
     width: 334px;
   }
 }
+
+@media (min-width: $desktop) {
+  .advantages-list-item {
+    width: 350px;
+  }
+}

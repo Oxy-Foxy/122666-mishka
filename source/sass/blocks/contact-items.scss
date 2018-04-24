@@ -10,3 +10,9 @@
     width: 334px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contact-items {
+    flex-direction: column;
+  }
+}
