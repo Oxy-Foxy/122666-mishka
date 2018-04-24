@@ -34,3 +34,18 @@
     order: 1;
   }
 }
+
+@media (min-width: $desktop) {
+  .order-form__textarea-label {
+    width: 175px;
+  }
+
+  .order-form__submit {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+
+  .order-form__textarea {
+    margin-right: 175px;
+  }
+}

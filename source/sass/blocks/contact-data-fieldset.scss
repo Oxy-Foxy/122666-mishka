@@ -20,3 +20,13 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: $desktop) {
+  .contact-data-fieldset__label {
+    width: 175px;
+  }
+
+  .contact-data-fieldset {
+    margin-right: 175px;
+  }
+}

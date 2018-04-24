@@ -20,3 +20,9 @@
     width: 167px;
   }
 }
+
+@media (min-width: $desktop) {
+  .type-fieldset__name {
+    width: 175px;
+  }
+}

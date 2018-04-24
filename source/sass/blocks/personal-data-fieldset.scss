@@ -36,3 +36,13 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: $desktop) {
+  .personal-data-fieldset__name {
+    width: 175px;
+  }
+
+  .personal-data-fieldset {
+    margin-right: 175px;
+  }
+}
