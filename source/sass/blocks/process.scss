@@ -10,7 +10,7 @@
   display: block;
   width: 260px;
   height: 150px;
-  background-image: url(../img/video-mobile@1x.jpg);
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
@@ -18,7 +18,7 @@
   .process__video-link {
     width: 668px;
     height: 455px;
-    background-image: url(../img/video-tablet@1x.jpg);
+    background-image: url("../img/video-tablet@1x.jpg");
   }
 
   .process__heading {
