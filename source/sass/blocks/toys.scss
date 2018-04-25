@@ -1,6 +1,17 @@
 .toys {
   background-color: $tiffany-darkerer;
-  color: $white;
 
   @include outline;
+}
+
+.toys a {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  text-decoration: none;
+  font-size: $main-fontsize + 4;
+}
+
+.toys__span {
+    width: 132px;
 }

@@ -2,6 +2,14 @@
   @include outline;
 }
 
+.advantages-list-item__advantage {
+  display: block;
+  padding-top: 86px;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 4;
+  font-weight: bold;
+}
+
 @media (min-width: $tablet) {
   .advantages-list-item {
     width: 334px;

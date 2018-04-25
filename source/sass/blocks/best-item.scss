@@ -3,14 +3,44 @@
 
   display: flex;
   flex-direction: column;
+
+  padding-bottom: 35px;
 }
 
 .best-item__heading {
   margin: 0;
+  font-size: $main-fontsize + 10;
+  line-height: $main-lineheight + 6;
 }
 
 .best-item__subheading {
   margin: 0;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 4;
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.best-item__description {
+  margin: 0;
+  padding: 28px 0;
+}
+
+.best-item__get-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.best-item__price {
+  padding: 25px 0;
+  text-align: center;
+  font-size: $main-fontsize + 2;
+  font-weight: bold;
+}
+
+.best-item__order {
+  text-decoration: none;
+  text-align: center;
 }
 
 @media (min-width: $tablet) {

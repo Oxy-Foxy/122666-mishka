@@ -1,5 +1,18 @@
 .reviews-list-item {
   @include outline;
+
+  margin-bottom: 35px;
+}
+
+.reviews-list-item__review-text {
+  margin: 0;
+  margin-bottom: 38px;
+  line-height: $main-lineheight + 6;
+}
+
+.reviews-list-item__person-name {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 @media (min-width: $desktop) {

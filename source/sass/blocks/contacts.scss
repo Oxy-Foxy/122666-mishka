@@ -1,17 +1,32 @@
 .contacts {
   @include outline;
+
+  padding-bottom: 40px;
 }
 
 .contacts__heading {
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: $main-fontsize + 3;
+  line-height: $main-lineheight + 6;
 }
 
 .contacts__map {
+  position: relative;
+  left: -30px;
   min-width: $mobile;
   height: 458px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.contacts__feedback {
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet) {

@@ -1,3 +1,11 @@
 .copyright {
   @include outline;
+
+  padding: 22px 0;
+}
+
+.copyright__span {
+  font-size: $main-fontsize + 4;
+  line-height: $main-lineheight - 6;
+  font-weight: bold;
 }

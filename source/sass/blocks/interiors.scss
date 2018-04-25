@@ -1,6 +1,17 @@
 .interiors {
   background-color: $tiffany;
-  color: $white;
 
   @include outline;
+}
+
+.interiors a {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  text-decoration: none;
+  font-size: $main-fontsize + 4;
+}
+
+.interiors__span {
+    width: 132px;
 }

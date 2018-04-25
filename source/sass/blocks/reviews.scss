@@ -1,9 +1,29 @@
 .reviews {
   @include outline;
+  padding-bottom: 35px;
 }
 
 .reviews__heading {
   margin: 0;
+  margin-bottom: 36px;
+  font-size: $main-fontsize + 10;
+  line-height: $main-lineheight + 6;
+}
+
+.reviews__toggle {
+  display: flex;
+}
+
+.reviews__prev-btn,
+.reviews__next-btn {
+  width: 132px;
+  margin-bottom: 37px;
+}
+
+.reviews__write-review {
+  display: block;
+  text-decoration: none;
+  text-align: center;
 }
 
 @media (min-width: $tablet) {

@@ -10,8 +10,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  margin-bottom: 30px;
 }
 
 .info__heading {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
   margin: 0;
+  padding-top: 76px;
+  text-align: center;
 }

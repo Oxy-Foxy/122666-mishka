@@ -1,7 +1,11 @@
 .advantages {
   @include outline;
+  margin-bottom: 60px;
 }
 
 .advantages__heading {
   margin: 0;
+  padding: 30px 0;
+  font-size: $main-fontsize + 10;
+  line-height: $main-lineheight + 6;
 }

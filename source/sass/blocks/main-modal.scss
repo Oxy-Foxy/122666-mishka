@@ -1,3 +1,29 @@
 .main-modal {
   @include outline;
+
+  padding-top: 36px;
+  padding-bottom: 46px;
+  width: 320px;
+  position: relative;
+  margin-left: -30px;
+  // padding-left: 30px;
+
+}
+
+.main-modal__span,
+.main-modal__heading {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+.main-modal__heading {
+  font-size: $main-fontsize + 10;
+  line-height: $main-lineheight + 6;
+  text-transform: uppercase;
+}
+
+.main-modal__span {
+  line-height: $main-lineheight + 6;
 }

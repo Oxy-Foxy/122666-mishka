@@ -1,3 +1,19 @@
 .contact-items-row {
   @include outline;
+
+  display: flex;
+}
+
+.contact-items-row__left-cell {
+  display: inline-block;
+  width: 78px;
+}
+
+.contact-items-row__right-cell {
+  display: inline-block;
+  width: 184px;
+}
+
+.contact-items-row__right-cell:last-of-type {
+  width: 142px;
 }

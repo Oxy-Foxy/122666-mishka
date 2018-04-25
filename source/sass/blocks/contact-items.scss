@@ -1,5 +1,8 @@
 .contact-items {
   @include outline;
+
+  line-height: $main-lineheight + 6;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet) {

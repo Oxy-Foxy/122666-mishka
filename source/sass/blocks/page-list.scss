@@ -8,6 +8,18 @@
   display: none;
 }
 
+.page-list__item {
+  @include outline;
+
+  padding-left: 45px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.page-list__item a {
+  text-decoration: none;
+}
+
 // @media (min-width: $tablet) {
 //   .page-list__item:nth-child(5),
 //   .page-list__item:last-child {

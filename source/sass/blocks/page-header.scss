@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+.page-header__logo {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 86px;
+}
+
 @media (min-width: $tablet) {
   .page-header {
     flex-direction: row;

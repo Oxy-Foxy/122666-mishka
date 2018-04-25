@@ -1,3 +1,7 @@
 .options-row {
   @include outline;
 }
+
+.options-row__left-cell {
+  width: 115px;
+}
