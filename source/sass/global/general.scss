@@ -1,4 +1,5 @@
 body {
+  @include outline;
   min-width: 320px;
   padding: 0;
   margin: 0 auto;
@@ -8,13 +9,37 @@ body {
   line-height: $main-lineheight;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  @include wrapper;
+}
+
+@media (min-width: $tablet) {
+  body {
+    min-width: $tablet;
+  }
+
+  .wrapper {
+    @include wrapper-tablet;
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    width: $desktop;
+  }
+
+  .desctop-wrapper {
+    padding: 0 50px;
+  }
+}

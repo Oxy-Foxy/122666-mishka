@@ -1,1 +1,48 @@
-// пустой файл
+.personal-data-fieldset {
+  @include outline;
+}
+
+.personal-data-fieldset__input,
+.personal-data-fieldset__label {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .personal-data-fieldset {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .personal-data-fieldset__fieldset {
+    display: flex;
+  }
+
+  .personal-data-fieldset__name {
+    width: 167px;
+  }
+
+  .personal-data-fieldset__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .personal-data-fieldset__form-element {
+    display: flex;
+  }
+
+  .personal-data-fieldset__input {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .personal-data-fieldset__name {
+    width: 175px;
+  }
+
+  .personal-data-fieldset {
+    margin-right: 175px;
+  }
+}

@@ -1,1 +1,18 @@
-// пустой файл
+.advantages-list {
+  @include outline;
+  @include no-list-style;
+}
+
+@media (min-width: $tablet) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages-list {
+    margin: 0 175px;
+  }
+}

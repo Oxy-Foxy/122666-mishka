@@ -1,1 +1,36 @@
-// пустой файл
+.reviews {
+  @include outline;
+}
+
+.reviews__heading {
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__heading {
+    order: 0;
+  }
+
+  .reviews__write-review {
+    order: 1;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__toggle {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop) {
+  .reviews__desktop-wrapper {
+    margin-left: 175px;
+  }
+}

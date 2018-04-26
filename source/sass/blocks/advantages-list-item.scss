@@ -1,1 +1,15 @@
-// пустой файл
+.advantages-list-item {
+  @include outline;
+}
+
+@media (min-width: $tablet) {
+  .advantages-list-item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages-list-item {
+    width: 350px;
+  }
+}

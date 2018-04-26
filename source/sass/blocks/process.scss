@@ -1,1 +1,49 @@
-// пустой файл
+.process {
+  @include outline;
+}
+
+.process__heading {
+  margin: 0;
+}
+
+.process__video-link {
+  display: block;
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet) {
+  .process__video-link {
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  .process__heading {
+    order: 2;
+  }
+
+  .process__text {
+    order: 3;
+  }
+
+  .process__make-order {
+    order: 4;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .process__heading,
+  .process__text,
+  .process__make-order {
+    width: 350px;
+  }
+
+  .process__video-link {
+    width: 700px;
+    height: 454px;
+  }
+}

@@ -1,1 +1,28 @@
-// пустой файл
+.type-fieldset {
+  @include outline;
+}
+
+.type-fieldset label {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .type-fieldset {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .type-fieldset__fieldset {
+    display: flex;
+  }
+
+  .type-fieldset__name {
+    width: 167px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .type-fieldset__name {
+    width: 175px;
+  }
+}

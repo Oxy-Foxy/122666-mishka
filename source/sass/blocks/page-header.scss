@@ -1,4 +1,16 @@
 .page-header {
   @include outline;
-  @include main-padding-lr;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    min-width: 370px;
+  }
 }

@@ -1,0 +1,13 @@
+.info-list {
+  @include no-list-style;
+}
+
+@media (min-width: $tablet) {
+  .info-list {
+    display: flex;
+  }
+
+  .info-list li {
+    flex-grow: 1;
+  }
+}

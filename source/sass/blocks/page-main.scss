@@ -1,1 +1,24 @@
-// пустой файл
+.page-main {
+  @include outline;
+}
+
+.page-main__manufacturing-process {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__heading {
+  margin: 0;
+}
+
+@media (min-width: $desktop) {
+  .page-main__manufacturing-process {
+    flex-wrap: wrap;
+    height: 454px;
+  }
+
+  .page-main__form-pretext {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+}

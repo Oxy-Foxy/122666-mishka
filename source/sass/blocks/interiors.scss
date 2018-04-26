@@ -1,4 +1,6 @@
 .interiors {
   background-color: $tiffany;
   color: $white;
+
+  @include outline;
 }

@@ -1,1 +1,16 @@
-// пустой файл
+.page-list {
+  @include outline;
+  @include no-list-style;
+}
+
+.page-list__item:nth-child(5),
+.page-list__item:last-child {
+  display: none;
+}
+
+// @media (min-width: $tablet) {
+//   .page-list__item:nth-child(5),
+//   .page-list__item:last-child {
+//     display: block;
+//   }
+// }

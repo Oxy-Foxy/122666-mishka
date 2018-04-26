@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header wrapper">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Магазин Мишка" width="86" height="35">
       </a>
@@ -24,48 +25,70 @@
           <li class="page-list__item">
             <a href="cart.html">Корзина: пока пуста</a>
           </li>
+          <li class="page-list__item">
+            <a href="new-items.html">Новые поступления</a>
+          </li>
+          <li class="page-list__item">
+            <a href="sale.html">Распродажа</a>
+          </li>
         </ul>
+        <span>Бесплатная доставка по России</span>
         <button class="page-navigation__toggle-btn">o</button>
         <button class="page-navigation__close-btn">x</button>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main wrapper">
       <h1 class="page-main__heading">Каталог товаров</h1>
       <ul class="page-main__item-list goods-list">
         <li class="goods-list__item goods-item">
           <a class="goods-item__image-link" href="funny-bunny.html">
             <img class="goods-item__image" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
           </a>
-          <a class="goods-item__item-name" href="funny-bunny.html">Зайчик-попрыгайчик</a>
-          <span class="goods-item__item-property">Рост 30см, вес 200г</span>
-          <span class="goods-item__item-price">1 200 руб.</span>
-          <button class="goods-item__order-item">v</button>
+          <div class="goods-item__right-column">
+            <div class="goods-item__item-description">
+              <a class="goods-item__item-name" href="funny-bunny.html">Зайчик-попрыгайчик</a>
+              <span class="goods-item__item-property">Рост 30см, вес 200г</span>
+            </div>
+            <div class="goods-item__order">
+              <span class="goods-item__item-price">1 200 руб.</span>
+              <button class="goods-item__order-item">v</button>
+            </div>
+          </div>
         </li>
         <li class="goods-list__item goods-item">
           <a class="goods-item__image-link" href="bascket.html">
             <img class="goods-item__image" src="http://placehold.it/260x195" alt="Корзинка для белья">
           </a>
-          <a class="goods-item__item-name" href="bascket.html">Корзинка для белья</a>
-          <span class="goods-item__item-property">Диаметр 15 см, высота 10 см</span>
-          <span class="goods-item__item-price">690 руб.</span>
-          <button class="goods-item__order-item">v</button>
+          <div class="goods-item__right-column">
+            <div class="goods-item__item-description">
+              <a class="goods-item__item-name" href="bascket.html">Корзинка для белья</a>
+              <span class="goods-item__item-property">Диаметр 15 см, высота 10 см</span>
+            </div>
+            <div class="goods-item__order">
+              <span class="goods-item__item-price">690 руб.</span>
+              <button class="goods-item__order-item">v</button>
+            </div>
+          </div>
         </li>
         <li class="goods-list__item goods-item">
           <a class="goods-item__image-link" href="big-basket.html">
             <img class="goods-item__image" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
           </a>
-          <a class="goods-item__item-name" href="big-basket.html">Большая корзинка для игрушек</a>
-          <span class="goods-item__item-property">Диаметр 30 см, высота 30 см</span>
-          <span class="goods-item__item-price">1 500 руб.</span>
-          <button class="goods-item__order-item">v</button>
+          <div class="goods-item__right-column">
+            <div class="goods-item__item-description">
+              <a class="goods-item__item-name" href="big-basket.html">Большая корзинка для игрушек</a>
+              <span class="goods-item__item-property">Диаметр 30 см, высота 30 см</span>
+            </div>
+            <div class="goods-item__order">
+              <span class="goods-item__item-price">1 500 руб.</span>
+              <button class="goods-item__order-item">v</button>
+            </div>
+          </div>
         </li>
       </ul>
       <section class="page-main__manufacturing-process process">
-        <img class="process__video-icon" src="http://placehold.it/32x22" alt="видео">
         <h2 class="process__heading">Процесс производства</h2>
-        <a class="process__video-link" href="#">
-          <img class="process__video-image" src="http://placehold.it/260x150" alt="Смотреть видео">
-        </a>
+        <a class="process__video-link" href="#"></a>
         <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="process__make-order" href="#">Сделать заказ</a>
       </section>
@@ -86,22 +109,23 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
+      <img class="page-footer__image" src="http://placehold.it/102x34" alt="">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
+            <a class="social__link social__link--instagram" href="#">i
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link social__link--facebook" href="#">f
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Твиттер</span>
+              <span class="visually-hidden">Твиттер</span>t
             </a>
           </li>
         </ul>

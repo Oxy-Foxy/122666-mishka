@@ -1,5 +1,38 @@
 .contacts {
+  @include outline;
+}
+
+.contacts__heading {
+  margin: 0;
+}
+
+.contacts__map {
+  min-width: $mobile;
+  height: 458px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet) {
+  .contacts__map {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__info-wrapper,
+  a.contacts__feedback {
+    margin-left: 175px;
+    width: 350px;
+  }
+
+  .contacts__map {
+    width: 525px;
+  }
 }

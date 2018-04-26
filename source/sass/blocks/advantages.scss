@@ -1,1 +1,7 @@
-// пустой файл
+.advantages {
+  @include outline;
+}
+
+.advantages__heading {
+  margin: 0;
+}
