@@ -24,6 +24,9 @@
 }
 
 @media (min-width: $desktop) {
+  .page-main__heading {
+    padding-bottom: 80px;
+  }
 
   .page-main__manufacturing-process {
     flex-wrap: wrap;
