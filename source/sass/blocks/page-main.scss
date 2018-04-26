@@ -16,7 +16,15 @@
   background-color: $bg-color-gray;
 }
 
+@media (min-width: $tablet) {
+  .page-main__heading {
+    padding-top: 106px;
+    padding-bottom: 76px;
+  }
+}
+
 @media (min-width: $desktop) {
+
   .page-main__manufacturing-process {
     flex-wrap: wrap;
     height: 454px;

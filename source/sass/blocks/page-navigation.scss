@@ -5,10 +5,9 @@
   @include outline;
 }
 
-.page-navigation__span {
-  display: none;
-}
-
+  .page-navigation__span {
+    display: none;
+  }
 
 @media (min-width: $tablet) {
   .page-navigation {

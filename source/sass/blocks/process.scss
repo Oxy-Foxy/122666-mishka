@@ -1,5 +1,7 @@
 .process {
   @include outline;
+
+  padding-bottom: 35px;
 }
 
 .process__heading {
@@ -14,23 +16,41 @@
   background-repeat: no-repeat;
 }
 
+  .process__make-order {
+    text-decoration: none;
+    text-align: center;
+  }
+
 @media (min-width: $tablet) {
+  .process {
+    padding-bottom: 45px;
+  }
+
   .process__video-link {
     width: 668px;
     height: 455px;
     background-image: url("../img/video-tablet@1x.jpg");
+    margin-bottom: 40px;
   }
 
   .process__heading {
     order: 2;
+    padding-left: 105px;
+    font-size: $main-fontsize + 5;
+    margin-bottom: 40px;
   }
 
   .process__text {
+    margin: 0;
+    padding: 0 38px;
     order: 3;
+    line-height: $main-lineheight + 6;
+    margin-bottom: 40px;
   }
 
   .process__make-order {
     order: 4;
+    padding: 0 38px;
   }
 }
 

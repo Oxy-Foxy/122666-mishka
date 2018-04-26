@@ -54,6 +54,16 @@
 
   .goods-item__image-link {
     width: 50%;
+    margin: 0;
+  }
+
+  .goods-item__item-description {
+    margin-top: 28px;
+  }
+
+  .goods-item__item-name {
+    width: 238px;
+    font-size: $main-fontsize + 5;
   }
 }
 

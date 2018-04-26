@@ -4,6 +4,13 @@
 
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+}
+
+@media (min-width: $tablet) {
+  .goods-list {
+    margin-top: 84px;
+  }
 }
 
 @media (min-width: $desktop) {
