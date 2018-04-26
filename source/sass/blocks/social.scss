@@ -14,3 +14,10 @@
   height: 20px;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .social {
+    padding: 0;
+    height: 30px;
+  }
+}

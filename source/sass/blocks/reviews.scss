@@ -30,6 +30,8 @@
   .reviews {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 67px; 
   }
 
   .reviews__heading {
@@ -38,6 +40,7 @@
 
   .reviews__write-review {
     order: 1;
+    width: 175px;
   }
 
   .reviews__list {
@@ -45,7 +48,18 @@
   }
 
   .reviews__toggle {
-    order: 4;
+    order: 3;
+  }
+
+  .reviews__heading {
+    padding-top: 86px;
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 26;
+    width: 185px;
+  }
+
+  .reviews__toggle {
+    width: 167px;
   }
 }
 
@@ -53,4 +67,6 @@
   .reviews__desktop-wrapper {
     margin-left: 175px;
   }
+
+
 }

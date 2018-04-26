@@ -9,3 +9,11 @@
   line-height: $main-lineheight - 6;
   font-weight: bold;
 }
+
+@media (min-width: $tablet) {
+  .copyright {
+    padding: 0;
+    height: 36px;
+    vertical-align: bottom;
+  }
+}

@@ -15,6 +15,12 @@
   margin-bottom: 12px;
 }
 
+@media (min-width: $tablet) {
+  .reviews-list-item__review-text {
+    margin-bottom: 66px;
+  }
+}
+
 @media (min-width: $desktop) {
   .reviews-list-item__review-text {
     padding-right: 100px;

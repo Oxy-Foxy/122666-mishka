@@ -43,10 +43,24 @@
   text-align: center;
 }
 
+.best-item__image {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet) {
+  .best-item {
+    padding-bottom: 52px;
+  }
+  
   .best-item__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 54px;
+  }
+
+  .best-item__subheading {
+    width: 72px;
+    text-align: center;
   }
 
   .best-item__content {
@@ -64,6 +78,13 @@
 
   .best-item__image {
     order: 4;
+  }
+
+  .best-item__description {
+    padding: 0;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight + 6;
+    margin-bottom: 50px;
   }
 }
 

@@ -9,3 +9,10 @@
   font-size: $main-fontsize + 10;
   line-height: $main-lineheight + 6;
 }
+
+@media (min-width: $tablet) {
+  .advantages__heading {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+}
