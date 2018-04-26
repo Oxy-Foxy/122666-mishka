@@ -4,6 +4,17 @@
 
 .color-fieldset__label {
   display: block;
+  margin-bottom: 42px;
+}
+
+.color-fieldset__name {
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.color-fieldset__form {
+  padding-top: 37px;
+  padding-left: 62px;
 }
 
 @media (min-width: $tablet) {

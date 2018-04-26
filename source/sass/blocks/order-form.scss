@@ -1,5 +1,10 @@
 .order-form {
   @include outline;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+  font-weight: bold;
+  color: $black;
+  padding-bottom: 55px;
 }
 
 .order-form__fieldset {
@@ -9,6 +14,28 @@
 .order-form__textarea-label,
 .order-form__textarea {
   display: block;
+}
+
+.order-form__textarea-label {
+  color: $tiffany;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.order-form__textarea {
+  width: 245px;
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 17px;
+  margin-bottom: 20px;
+}
+
+.order-form__footnote {
+  font-size: $main-fontsize - 1;
+  line-height: $main-lineheight - 10;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet) {

@@ -2,8 +2,20 @@
   @include outline;
 }
 
-.type-fieldset label {
+.type-fieldset__name {
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.type-fieldset__form {
+  padding-top: 37px;
+  padding-bottom: 14px;
+  padding-left: 62px;
+}
+
+.type-fieldset__label {
   display: block;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet) {

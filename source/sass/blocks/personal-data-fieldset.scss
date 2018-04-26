@@ -7,6 +7,30 @@
   display: block;
 }
 
+.personal-data-fieldset__name {
+  color: $tiffany;
+  text-transform: uppercase;
+
+}
+
+.personal-data-fieldset__form {
+  padding: 33px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 251px;
+}
+
+.personal-data-fieldset__input {
+  height: 50px;
+  border: 1px solid $black;
+  width: 100%;
+}
+
+.personal-data-fieldset__label {
+  padding-bottom: 5px;
+}
+
 @media (min-width: $tablet) {
   .personal-data-fieldset {
     display: flex;
