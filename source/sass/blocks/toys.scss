@@ -15,3 +15,14 @@
 .toys__span {
     width: 132px;
 }
+
+@media (min-width: $desktop) {
+  .toys {
+    padding: 35px;
+  }
+
+  .toys__span {
+    font-size: $main-fontsize  + 5;
+    line-height: $main-lineheight + 6;
+  }
+}

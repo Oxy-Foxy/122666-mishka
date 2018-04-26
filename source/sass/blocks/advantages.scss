@@ -16,3 +16,16 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $tablet) {
+  .advantages {
+    padding-bottom: 88px;
+    margin: 0;
+  }
+
+  .advantages__heading {
+    font-size: $main-fontsize + 38;
+    line-height: $main-lineheight + 31;
+    margin-left: 175px;
+  }
+}

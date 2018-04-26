@@ -20,4 +20,9 @@
   .advantages-list-item {
     width: 350px;
   }
+
+  .advantages-list-item__advantage {
+    font-size: $main-fontsize + 5;
+    line-height: $main-lineheight - 2;
+  }
 }
