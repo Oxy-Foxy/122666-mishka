@@ -3,6 +3,18 @@
 
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.goods-item__right-column {
+  margin: 0 28px;
+}
+
+.goods-item__order {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 29px;
 }
 
 .goods-item__order-item {
@@ -13,6 +25,18 @@
 .goods-item__item-description {
   display: flex;
   flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.goods-item__image-link {
+  margin-bottom: 30px;
+}
+
+.goods-item__item-name {
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet) {

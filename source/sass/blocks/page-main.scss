@@ -9,6 +9,11 @@
 
 .page-main__heading {
   margin: 0;
+  font-size: $main-fontsize + 12;
+  line-height: $main-lineheight + 4;
+  text-align: center;
+  padding: 78px 0;
+  background-color: $bg-color-gray;
 }
 
 @media (min-width: $desktop) {
