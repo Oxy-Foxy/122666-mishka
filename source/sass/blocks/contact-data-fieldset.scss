@@ -24,7 +24,7 @@
 
 @media (min-width: $tablet) {
   .contact-data-fieldset {
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
   }
 
   .contact-data-fieldset__element {
@@ -45,9 +45,14 @@
 @media (min-width: $desktop) {
   .contact-data-fieldset__label {
     width: 175px;
+    text-align: center;
   }
 
   .contact-data-fieldset {
     margin-right: 175px;
+  }
+
+  .contact-data-fieldset__input {
+    width: 700px;
   }
 }

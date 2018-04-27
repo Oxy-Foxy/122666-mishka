@@ -30,16 +30,23 @@
 
 @media (min-width: $desktop) {
   .page-main__heading {
-    padding-bottom: 80px;
+    padding-top: 106px;
+    padding-bottom: 72px;
+    font-size: $main-fontsize + 38;
+    line-height: $main-lineheight + 31;
+  }
+
+  .page-main__form-pretext {
+    margin-top: 133px;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight + 4;
+    margin-bottom: 43px;
+    margin-left: 175px;
+    margin-right: 175px;
   }
 
   .page-main__manufacturing-process {
     flex-wrap: wrap;
     height: 454px;
-  }
-
-  .page-main__form-pretext {
-    margin-left: 175px;
-    margin-right: 175px;
   }
 }

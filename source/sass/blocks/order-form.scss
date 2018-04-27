@@ -72,6 +72,8 @@
 @media (min-width: $desktop) {
   .order-form__textarea-label {
     width: 175px;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   .order-form__submit {
@@ -81,5 +83,6 @@
 
   .order-form__textarea {
     margin-right: 175px;
+    margin-bottom: 50px;
   }
 }
