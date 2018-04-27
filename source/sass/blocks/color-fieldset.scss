@@ -2,11 +2,6 @@
   @include outline;
 }
 
-.color-fieldset__label {
-  display: block;
-  margin-bottom: 42px;
-}
-
 .color-fieldset__name {
   color: $tiffany;
   text-transform: uppercase;
@@ -17,29 +12,43 @@
   padding-left: 62px;
 }
 
+.color-fieldset__label {
+  display: block;
+  margin-bottom: 42px;
+}
+
 @media (min-width: $tablet) {
   .color-fieldset {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .color-fieldset__fieldset {
     display: flex;
+    flex-direction: row;
+    height: 237px;
+    margin-top: 67px;
+    // flex-wrap: wrap;
   }
 
   .color-fieldset__name {
     width: 167px;
+
   }
 
   .color-fieldset__form {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     height: 72px;
+    width: 500px;
+    padding: 0;
   }
 
   .color-fieldset__label {
-    width: 250px;
+    width: 167px;
+    padding-left: 82px;
   }
 }
 

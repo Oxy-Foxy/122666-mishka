@@ -31,6 +31,10 @@
   .type-fieldset__name {
     width: 167px;
   }
+
+  .type-fieldset__form {
+    padding-left: 80px;
+  }
 }
 
 @media (min-width: $desktop) {

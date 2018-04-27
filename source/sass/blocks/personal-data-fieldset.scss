@@ -35,6 +35,7 @@
   .personal-data-fieldset {
     display: flex;
     flex-direction: row;
+    padding-top: 68px;
   }
 
   .personal-data-fieldset__fieldset {
@@ -50,6 +51,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 
   .personal-data-fieldset__form-element {
@@ -58,6 +61,10 @@
 
   .personal-data-fieldset__input {
     flex-grow: 1;
+  }
+
+  .personal-data-fieldset__label {
+    margin-right: 25px;
   }
 }
 

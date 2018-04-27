@@ -39,16 +39,24 @@
 }
 
 @media (min-width: $tablet) {
+  .order-form {
+    padding-bottom: 50px;
+  }
+
   .order-form__textarea-fieldset {
     display: flex;
+    padding-top: 50px;
   }
 
   .order-form__textarea-label {
     width: 167px;
+    margin-top: 20px;
+    margin-bottom: 53px;
   }
 
   .order-form__textarea {
     flex-grow: 1;
+    margin-bottom: 53px;
   }
 
   .order-form__submit {

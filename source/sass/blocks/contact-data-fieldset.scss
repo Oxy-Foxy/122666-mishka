@@ -23,16 +23,22 @@
 }
 
 @media (min-width: $tablet) {
+  .contact-data-fieldset {
+    padding-bottom: 50px;    
+  }
+
   .contact-data-fieldset__element {
     display: flex;
   }
 
   .contact-data-fieldset__label {
     width: 167px;
+    margin-top: 68px;
   }
 
   .contact-data-fieldset__input {
     flex-grow: 1;
+    margin-top: 50px;
   }
 }
 
