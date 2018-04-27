@@ -36,6 +36,10 @@
 
   .reviews__heading {
     order: 0;
+    padding-top: 86px;
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 26;
+    width: 185px;
   }
 
   .reviews__write-review {
@@ -49,16 +53,6 @@
 
   .reviews__toggle {
     order: 3;
-  }
-
-  .reviews__heading {
-    padding-top: 86px;
-    font-size: $main-fontsize + 28;
-    line-height: $main-lineheight + 26;
-    width: 185px;
-  }
-
-  .reviews__toggle {
     width: 167px;
   }
 }
@@ -70,14 +64,11 @@
 
   .reviews__desktop-wrapper {
     margin-left: 175px;
-
-  }
+}
 
   .reviews__heading {
     padding-top: 80px;
     font-size: $main-fontsize + 38;
     line-height: $main-lineheight + 31;
   }
-
-
 }
