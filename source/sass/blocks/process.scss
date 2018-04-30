@@ -1,11 +1,17 @@
 .process {
-  @include outline;
-
-  padding-bottom: 35px;
+  padding-bottom: 32px;
+  width: 260px;
+  margin: 0 auto;
+  border: 1px solid $header-border-color;
+  margin-bottom: 57px;
 }
 
 .process__heading {
   margin: 0;
+  padding-left: 90px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: $main-fontsize + 2;
 }
 
 .process__video-link {
@@ -17,8 +23,20 @@
 }
 
 .process__make-order {
+  @include main-btn;
+
+  width: 192px;
+  margin: 0 auto;
   text-decoration: none;
   text-align: center;
+}
+
+.process__text {
+  padding-left: 34px;
+  margin-top: 34px;
+  margin-bottom: 28px;
+  width: 184px;
+  font-size: $main-fontsize - 2;
 }
 
 @media (min-width: $tablet) {
