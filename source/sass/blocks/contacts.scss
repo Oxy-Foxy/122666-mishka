@@ -66,18 +66,38 @@
 @media (min-width: $desktop) {
   .contacts {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
+    height: 500px;
+  }
+
+  .contacts__heading::after {
+    left: 50px;
+  }
+
+  .contacts__info-wrapper {
+    margin: 0;
+    padding: 0;
+    height: 335px;
   }
 
   .contacts__info-wrapper,
   a.contacts__feedback {
     margin-left: 175px;
-    width: 350px;
+  }
+
+  a.contacts__feedback {
+    height: 24px;
+    margin-top: 66px;
   }
 
   .contacts__map {
     width: 525px;
     left: 0;
     top: 73px;
+    background-image: url("../img/map-tablet@1x.jpg");
+    margin: 0;
+    order: 1;
   }
 }
