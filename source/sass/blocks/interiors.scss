@@ -1,19 +1,29 @@
 .interiors {
   background-color: $tiffany;
-
-  @include outline;
+  padding: 28px 0;
 }
 
 .interiors a {
   display: flex;
-  justify-content: space-between;
   color: $white;
   text-decoration: none;
   font-size: $main-fontsize + 4;
+  position: relative;
 }
 
 .interiors__span {
-  width: 132px;
+  width: 130px;
+}
+
+.interiors__span::after {
+  content: "";
+  width: 40px;
+  height: 62px;
+  position: absolute;
+  top: -5px;
+  right: 36px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $desktop) {

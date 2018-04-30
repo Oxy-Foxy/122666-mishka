@@ -1,9 +1,6 @@
 .best-item {
-  @include outline;
-
   display: flex;
   flex-direction: column;
-
   padding-bottom: 35px;
 }
 
@@ -11,6 +8,7 @@
   margin: 0;
   font-size: $main-fontsize + 10;
   line-height: $main-lineheight + 6;
+  color: $black;
 }
 
 .best-item__subheading {
@@ -26,6 +24,11 @@
   padding: 28px 0;
 }
 
+.best-item__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .best-item__get-order {
   display: flex;
   flex-direction: column;
@@ -39,8 +42,11 @@
 }
 
 .best-item__order {
+  @include main-btn;
+
   text-decoration: none;
   text-align: center;
+  margin: 0 auto;
 }
 
 .best-item__image {

@@ -1,6 +1,4 @@
 .page-header {
-  @include outline;
-
   display: flex;
   flex-direction: column;
 }
@@ -8,7 +6,13 @@
 .page-header__logo {
   padding-top: 22px;
   padding-bottom: 22px;
-  // padding-left: 86px;
+  border-top: 1px solid $header-border-color;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.page-header__logo a {
+  display: block;
+  width: 86px;
   margin: 0 auto;
 }
 

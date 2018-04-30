@@ -1,19 +1,29 @@
 .toys {
   background-color: $tiffany-darkerer;
-
-  @include outline;
+  padding: 28px 0;
 }
 
 .toys a {
   display: flex;
-  justify-content: space-between;
   color: $white;
   text-decoration: none;
   font-size: $main-fontsize + 4;
+  position: relative;
 }
 
 .toys__span {
-  width: 132px;
+  width: 130px;
+}
+
+.toys__span::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -5px;
+  right: 27px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $desktop) {

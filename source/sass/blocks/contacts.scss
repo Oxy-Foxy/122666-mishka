@@ -1,6 +1,4 @@
 .contacts {
-  @include outline;
-
   padding-bottom: 40px;
 }
 
@@ -13,20 +11,20 @@
 }
 
 .contacts__map {
-  @include outline;
-
-  position: relative;
-  left: -30px;
-  width: $mobile;
+  width: 100vw;
   height: 458px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .contacts__feedback {
+  @include main-btn;
+
   display: block;
+  margin: 0 auto;
   text-align: center;
   text-decoration: none;
 }

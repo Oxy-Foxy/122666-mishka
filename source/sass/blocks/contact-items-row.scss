@@ -1,6 +1,4 @@
 .contact-items-row {
-  @include outline;
-
   display: flex;
 }
 
@@ -11,9 +9,14 @@
 
 .contact-items-row__right-cell {
   display: inline-block;
-  width: 184px;
+  width: 180px;
 }
 
-.contact-items-row__right-cell:last-of-type {
+.contact-items-row__right-cell {
+  border-bottom: 1px solid $tiffany-darker;
+}
+
+.contact-items-row:last-of-type .contact-items-row__right-cell {
   width: 142px;
+  border-bottom: none;
 }

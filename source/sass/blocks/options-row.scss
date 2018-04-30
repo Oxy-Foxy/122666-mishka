@@ -1,7 +1,12 @@
 .options-row {
-  @include outline;
 }
 
 .options-row__left-cell {
   width: 115px;
+}
+
+.options-row__right-cell,
+.options-row__left-cell {
+  padding: 10px 0;
+  border-bottom: 1px solid $header-border-color;
 }

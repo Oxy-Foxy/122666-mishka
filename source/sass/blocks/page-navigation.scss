@@ -1,8 +1,6 @@
 .page-navigation {
   font-size: $main-fontsize + 2;
   font-weight: bold;
-
-  @include outline;
 }
 
 .page-navigation__span {

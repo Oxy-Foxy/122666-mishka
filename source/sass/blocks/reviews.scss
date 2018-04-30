@@ -1,5 +1,4 @@
 .reviews {
-  @include outline;
   padding-bottom: 35px;
 }
 
@@ -12,18 +11,37 @@
 
 .reviews__toggle {
   display: flex;
+  justify-content: center;
 }
 
 .reviews__prev-btn,
 .reviews__next-btn {
   width: 132px;
   margin-bottom: 37px;
+  height: 50px;
+  border: 1px solid $header-border-color;
+  box-shadow: none;
+  background-color: $white;
+}
+
+.reviews__prev-btn {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__next-btn {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews__write-review {
+  @include main-btn;
   display: block;
   text-decoration: none;
   text-align: center;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {

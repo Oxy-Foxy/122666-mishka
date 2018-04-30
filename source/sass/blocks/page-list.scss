@@ -1,6 +1,6 @@
 .page-list {
-  @include outline;
   @include no-list-style;
+
 }
 
 .page-list__item:nth-child(5),
@@ -9,15 +9,41 @@
 }
 
 .page-list__item {
-  @include outline;
-
-  padding-left: 45px;
+  padding-left: 75px;
   padding-top: 28px;
   padding-bottom: 28px;
+  border-bottom: 1px solid $header-border-color;
+  position: relative;
+}
+
+.page-list__item:nth-child(3) a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 32px;
+  top: 33px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-list__item:nth-child(4) a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 32px;
+  top: 33px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-list__item a {
   text-decoration: none;
+  color: $black;
+  line-height: $main-lineheight + 6;
 }
 
 // @media (min-width: $tablet) {
