@@ -40,3 +40,22 @@
   padding-bottom: 14px;
   color: $main-text-color;
 }
+
+@mixin fieldset-type-line {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 62px;
+  height: 1px;
+  width: 100%;
+  background-color: $tiffany-darker;
+}
+
+@mixin custome-input {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $main-text-color;
+}

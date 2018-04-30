@@ -1,5 +1,4 @@
 .order-form {
-  @include outline;
   font-size: $main-fontsize + 2;
   line-height: $main-lineheight - 6;
   font-weight: bold;
@@ -11,22 +10,33 @@
   @include no-fieldset-style;
 }
 
+.order-form__textarea-fieldset {
+  position: relative;
+  overflow: hidden;
+}
+
 .order-form__textarea-label,
 .order-form__textarea {
   display: block;
 }
 
 .order-form__textarea-label {
+  width: 62px;
   color: $tiffany;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
+}
+
+.order-form__textarea-label::after {
+  @include fieldset-type-line;
 }
 
 .order-form__textarea {
-  width: 245px;
+  width: 241px;
   padding: 0;
   padding-left: 15px;
   padding-top: 17px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -36,6 +46,13 @@
   font-weight: 400;
   display: block;
   margin-bottom: 30px;
+}
+
+.order-form__order-btn{
+  background-color: white;
+  box-shadow: none;
+  margin: 0 auto;
+  @include main-btn;
 }
 
 @media (min-width: $tablet) {

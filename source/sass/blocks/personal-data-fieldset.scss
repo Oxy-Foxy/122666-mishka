@@ -1,5 +1,9 @@
 .personal-data-fieldset {
-  @include outline;
+}
+
+.personal-data-fieldset__fieldset {
+  position: relative;
+  overflow: hidden;
 }
 
 .personal-data-fieldset__input,
@@ -8,8 +12,13 @@
 }
 
 .personal-data-fieldset__name {
+  width: 62px;
   color: $tiffany;
   text-transform: uppercase;
+}
+
+.personal-data-fieldset__name::after {
+  @include fieldset-type-line;
 }
 
 .personal-data-fieldset__form {
@@ -22,7 +31,8 @@
 
 .personal-data-fieldset__input {
   height: 50px;
-  border: 1px solid $black;
+  border: none;
+  border-bottom: 1px solid $black;
   width: 100%;
 }
 

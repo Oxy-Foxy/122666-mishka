@@ -1,21 +1,44 @@
 .type-fieldset {
-  @include outline;
+}
+
+.type-fieldset__fieldset {
+  position: relative;
+  overflow: hidden;
 }
 
 .type-fieldset__name {
+  width: 62px;
   color: $tiffany;
   text-transform: uppercase;
+}
+
+.type-fieldset__name::after {
+  @include fieldset-type-line;
 }
 
 .type-fieldset__form {
   padding-top: 37px;
   padding-bottom: 14px;
   padding-left: 62px;
+  position: relative;
 }
 
 .type-fieldset__label {
   display: block;
   margin-bottom: 30px;
+}
+
+.type-fieldset__label::before {
+  @include custome-input;
+  border-radius: 50%;
+}
+
+.type-fieldset__label[for="toy"]::before {
+  top: 77px;
+}
+
+.type-fieldset__label[for="accessory"]::before {
+  top: 26px;
 }
 
 @media (min-width: $tablet) {
