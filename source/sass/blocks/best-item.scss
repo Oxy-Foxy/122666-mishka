@@ -49,10 +49,6 @@
   margin: 0 auto;
 }
 
-.best-item__image {
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet) {
   .best-item {
     padding-bottom: 52px;
@@ -70,7 +66,7 @@
   }
 
   .best-item__content {
-    height: 400px;
+    height: 523px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

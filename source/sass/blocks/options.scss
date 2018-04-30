@@ -2,3 +2,9 @@
   margin-bottom: 28px;
   border-collapse: collapse;
 }
+
+@media (min-width: $tablet) {
+  .options {
+    margin: 0;
+  }
+}

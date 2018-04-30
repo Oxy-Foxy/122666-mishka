@@ -20,3 +20,9 @@
   width: 142px;
   border-bottom: none;
 }
+
+@media (min-width: $tablet) {
+  .contact-items-row:first-of-type {
+    height: 30px;
+  }
+}

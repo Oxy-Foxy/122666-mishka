@@ -44,8 +44,22 @@
     line-height: $main-lineheight + 24;
   }
 
+  .contacts__heading::after {
+    content: "";
+    position: absolute;
+    right: 50px;
+    width: 50px;
+    height: 82px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
   .contacts {
     padding-bottom: 56px;
+  }
+
+  .contacts__feedback {
+    width: 230px;
   }
 }
 

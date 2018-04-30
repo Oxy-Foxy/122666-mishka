@@ -50,6 +50,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 67px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    position: relative;
   }
 
   .reviews__heading {
@@ -61,6 +64,9 @@
   }
 
   .reviews__write-review {
+    position: absolute;
+    top: 95px;
+    right: 50px;
     order: 1;
     width: 175px;
   }
@@ -70,8 +76,16 @@
   }
 
   .reviews__toggle {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
     order: 3;
     width: 167px;
+  }
+
+  .reviews__prev-btn,
+  .reviews__next-btn {
+    border: none;
   }
 }
 
