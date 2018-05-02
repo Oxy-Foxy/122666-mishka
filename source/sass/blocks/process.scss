@@ -77,27 +77,30 @@
   }
 }
 
-
 @media (min-width: $desktop) {
   .process {
-    height: 455px;
+    height: 590px;
+    width: 1050px;
     padding: 0;
   }
 
-  .process__heading,
-  .process__text,
   .process__make-order {
     width: 230px;
-    padding-left: 79px;
+    margin-left: 80px;
   }
 
   .process__heading {
+    width: 230px;
+    padding-left: 79px;
     padding-top: 100px;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .process__text {
-    padding-top: 42px;
+    width: 314px;
+    padding-top: 40px;
+    padding-left: 79px;
     padding-bottom: 49px;
     margin-bottom: 0;
   }

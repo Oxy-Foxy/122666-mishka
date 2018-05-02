@@ -84,7 +84,8 @@
 @media (min-width: $desktop) {
   .goods-item {
     width: 315px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
   }
 
   .goods-item__image-link {
