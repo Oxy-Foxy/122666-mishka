@@ -4,8 +4,9 @@
 
 @media (min-width: $tablet) {
   .info-list {
+    @include wrapper-tablet;
     display: flex;
-    width: 100%;
+    width: 668px;
   }
 
   .info-list li {
