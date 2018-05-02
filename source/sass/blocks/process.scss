@@ -42,6 +42,7 @@
 @media (min-width: $tablet) {
   .process {
     padding-bottom: 45px;
+    width: 668px;
   }
 
   .process__video-link {
@@ -59,8 +60,10 @@
   }
 
   .process__text {
+    width: 668px;
+    box-sizing: border-box;
     margin: 0;
-    padding: 0 38px;
+    padding: 0 40px;
     order: 3;
     line-height: $main-lineheight + 6;
     margin-bottom: 40px;
@@ -68,7 +71,9 @@
 
   .process__make-order {
     order: 4;
-    padding: 0 38px;
+    padding: 14px 38px;
+    width: 584px;
+    box-sizing: border-box;
   }
 }
 
