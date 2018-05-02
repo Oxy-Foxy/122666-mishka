@@ -13,6 +13,7 @@
   padding-left: 0;
 }
 
+
 @mixin wrapper {
   padding: 0 30px;
   margin: 0 auto;
@@ -45,16 +46,17 @@
   content: "";
   position: absolute;
   top: 9px;
-  left: 62px;
+  left: 92px;
   height: 1px;
-  width: 100%;
+  width: 198px;
   background-color: $tiffany-darker;
 }
 
 @mixin custome-input {
   content: "";
   position: absolute;
-  left: 0;
+  left: -62px;
+  top: -12px;
   width: 40px;
   height: 40px;
   border: 1px solid $main-text-color;

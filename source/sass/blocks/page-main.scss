@@ -27,6 +27,12 @@
     padding-top: 106px;
     padding-bottom: 76px;
   }
+
+  .page-main__form-pretext {
+    width: 668px;
+    font-size: $main-fontsize + 2;
+    margin-bottom: 63px;
+  }
 }
 
 @media (min-width: $desktop) {

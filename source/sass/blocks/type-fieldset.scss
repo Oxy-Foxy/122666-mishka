@@ -1,5 +1,6 @@
-.type-fieldset {
-}
+// .type-fieldset {
+//
+// }
 
 .type-fieldset__fieldset {
   position: relative;
@@ -23,22 +24,19 @@
   position: relative;
 }
 
-.type-fieldset__label {
-  display: block;
+.type-fieldset__form-element {
+  position: relative;
   margin-bottom: 30px;
 }
 
-.type-fieldset__label::before {
+.type-fieldset__label {
+  display: block;
+}
+
+.type-fieldset__label[for="accessory"]::before,
+.type-fieldset__label[for="toy"]::before {
   @include custome-input;
   border-radius: 50%;
-}
-
-.type-fieldset__label[for="toy"]::before {
-  top: 77px;
-}
-
-.type-fieldset__label[for="accessory"]::before {
-  top: 26px;
 }
 
 @media (min-width: $tablet) {
@@ -49,6 +47,11 @@
 
   .type-fieldset__fieldset {
     display: flex;
+    padding-top: 12px;
+  }
+
+  .type-fieldset__name::after {
+    display: none;
   }
 
   .type-fieldset__name {
@@ -57,6 +60,11 @@
 
   .type-fieldset__form {
     padding-left: 80px;
+    padding-top: 0px;
+  }
+
+  .type-fieldset__label {
+    margin-bottom: 47px;
   }
 }
 

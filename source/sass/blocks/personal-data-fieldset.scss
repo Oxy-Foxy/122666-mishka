@@ -52,7 +52,12 @@
   }
 
   .personal-data-fieldset__name {
+    padding-top: 20px;
     width: 167px;
+  }
+
+  .personal-data-fieldset__name::after {
+    display: none;
   }
 
   .personal-data-fieldset__form {
@@ -74,6 +79,7 @@
 
   .personal-data-fieldset__label {
     margin-right: 25px;
+    padding-top: 20px;
   }
 }
 

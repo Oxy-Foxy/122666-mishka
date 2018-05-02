@@ -39,22 +39,31 @@
 
 @media (min-width: $tablet) {
   .contact-data-fieldset {
+    padding-top: 50px;
     padding-bottom: 50px;
+    background-color: $bg-color-gray;
   }
 
   .contact-data-fieldset__element {
     display: flex;
+    margin-bottom: 0;
+    height: 53px;
   }
 
   .contact-data-fieldset__label--tel,
   .contact-data-fieldset__label--email {
     width: 167px;
-    margin-top: 68px;
+    padding-top: 20px;
+  }
+
+  .contact-data-fieldset__label--tel::after,
+  .contact-data-fieldset__label--email::after {
+    display: none;
   }
 
   .contact-data-fieldset__input {
     flex-grow: 1;
-    margin-top: 50px;
+    background-color: transparent;
   }
 }
 

@@ -62,7 +62,8 @@
 
   .order-form__textarea-fieldset {
     display: flex;
-    padding-top: 50px;
+    padding-top: 51px;
+    height: 192px;
   }
 
   .order-form__textarea-label {
@@ -71,9 +72,15 @@
     margin-bottom: 53px;
   }
 
+  .order-form__textarea-label::after {
+    display: none;
+  }
+
   .order-form__textarea {
     flex-grow: 1;
+    padding-top: 15px;
     margin-bottom: 53px;
+    height: 141px;
   }
 
   .order-form__submit {

@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.color-fieldset__form-element {
+  position: relative;
+}
+
 .color-fieldset__label {
   display: block;
   margin-bottom: 42px;
@@ -31,47 +35,27 @@
   @include custome-input;
 }
 
-.color-fieldset__label[for="white"]::before {
-  top: 26px;
-}
-
-.color-fieldset__label[for="gray"]::before {
-  top: 86px;
-}
-
-.color-fieldset__label[for="tiffany"]::before {
-  top: 146px;
-}
-
-.color-fieldset__label[for="black"]::before {
-  top: 206px;
-}
-
-.color-fieldset__label[for="pink"]::before {
-  top: 266px;
-}
-
-.color-fieldset__label[for="orange"]::before {
-  top: 326px;
-}
-
 @media (min-width: $tablet) {
   .color-fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: $bg-color-gray;
   }
 
   .color-fieldset__fieldset {
     display: flex;
     flex-direction: row;
     height: 237px;
-    margin-top: 67px;
-    // flex-wrap: wrap;
+    padding-top: 67px;
   }
 
   .color-fieldset__name {
     width: 167px;
+  }
+
+  .color-fieldset__name::after {
+    display: none;
   }
 
   .color-fieldset__form {
@@ -86,6 +70,10 @@
   .color-fieldset__label {
     width: 167px;
     padding-left: 82px;
+  }
+
+  .color-fieldset__label::before {
+    left: -4px;
   }
 }
 
