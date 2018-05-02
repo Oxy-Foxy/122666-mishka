@@ -48,7 +48,7 @@
   margin-bottom: 30px;
 }
 
-.order-form__order-btn{
+.order-form__order-btn {
   background-color: white;
   box-shadow: none;
   margin: 0 auto;
@@ -90,6 +90,10 @@
 
   .order-form__footnote {
     order: 1;
+  }
+
+  .order-form__order-btn {
+    margin: 0;
   }
 }
 

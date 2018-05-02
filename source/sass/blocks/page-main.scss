@@ -44,12 +44,13 @@
   }
 
   .page-main__form-pretext {
-    margin-top: 133px;
+    width: 700px;
     font-size: $main-fontsize + 2;
     line-height: $main-lineheight + 4;
+    margin: 0 auto;
+    margin-top: 133px;
     margin-bottom: 43px;
-    margin-left: 175px;
-    margin-right: 175px;
+    padding: 0;
   }
 
   .page-main__manufacturing-process {

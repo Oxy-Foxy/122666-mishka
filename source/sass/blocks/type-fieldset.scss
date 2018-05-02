@@ -33,9 +33,9 @@
   display: block;
 }
 
-.type-fieldset__label[for="accessory"]::before,
-.type-fieldset__label[for="toy"]::before {
+.type-fieldset__label::before {
   @include custome-input;
+  
   border-radius: 50%;
 }
 
@@ -65,6 +65,11 @@
 
   .type-fieldset__label {
     margin-bottom: 47px;
+  }
+
+  .type-fieldset__label[for="accessory"]::before,
+  .type-fieldset__label[for="toy"]::before {
+    left: -85px;
   }
 }
 
