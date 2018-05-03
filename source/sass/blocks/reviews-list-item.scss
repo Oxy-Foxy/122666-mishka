@@ -14,8 +14,14 @@
 }
 
 @media (min-width: $tablet) {
+  .reviews-list-item {
+    margin-bottom: 52px;
+  }
+
   .reviews-list-item__review-text {
-    margin-bottom: 66px;
+    margin-top: 50px;
+    margin-bottom: 56px;
+    font-size: $main-fontsize + 2;
   }
 }
 

@@ -20,8 +20,14 @@
 
 @media (min-width: $tablet) {
   .copyright {
+    margin-top: 15px;
     padding: 0;
     height: 36px;
     vertical-align: bottom;
+  }
+
+  .copyright__link {
+    margin-right: 0;
+    margin-left: 30px;
   }
 }

@@ -29,4 +29,12 @@
   .contact-items-row:first-of-type {
     height: 30px;
   }
+
+  .contact-items-row__right-cell {
+    width: 205px;
+  }
+
+  .contact-items-row:last-of-type .contact-items-row__right-cell {
+    width: 222px;
+  }
 }

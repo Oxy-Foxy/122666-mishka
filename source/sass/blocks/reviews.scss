@@ -57,18 +57,19 @@
 
   .reviews__heading {
     order: 0;
-    padding-top: 86px;
+    padding-top: 75px;
     font-size: $main-fontsize + 28;
     line-height: $main-lineheight + 26;
     width: 185px;
   }
 
   .reviews__write-review {
+    font-size: $main-fontsize + 2;
     position: absolute;
-    top: 95px;
+    top: 77px;
     right: 50px;
     order: 1;
-    width: 175px;
+    width: 170px;
   }
 
   .reviews__list {
@@ -77,8 +78,8 @@
 
   .reviews__toggle {
     position: absolute;
-    bottom: 80px;
-    right: 50px;
+    bottom: 78px;
+    right: 52px;
     order: 3;
     width: 167px;
   }

@@ -53,22 +53,29 @@
 
 @media (min-width: $tablet) {
   .best-item {
-    padding-bottom: 52px;
+    padding-bottom: 50px;
   }
 
   .best-item__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 54px;
+    margin-bottom: 45px;
+  }
+
+  .best-item__heading {
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 26;
   }
 
   .best-item__subheading {
+    margin-top: 10px;
+    margin-right: 25px;
     width: 72px;
     text-align: center;
   }
 
   .best-item__content {
-    height: 523px;
+    height: 416px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -82,13 +89,29 @@
 
   .best-item__image {
     order: 4;
+    margin-top: 10px;
   }
 
   .best-item__description {
     padding: 0;
     font-size: $main-fontsize + 2;
     line-height: $main-lineheight + 6;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    padding-right: 40px;
+  }
+
+  .best-item__price {
+    font-size: $main-fontsize + 5;
+    padding-bottom: 35px;
+  }
+
+  .best-item__order {
+    margin: 0;
+    width: 290px;
+  }
+
+  .best-item__get-order {
+    width: 290px;
   }
 }
 

@@ -26,6 +26,19 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet) {
+  .interiors a {
+    padding-left: 35px;
+    font-size: $main-fontsize + 5;
+    line-height: $main-lineheight + 6;
+    font-weight: bold;
+  }
+
+  .interiors__span::after {
+    top: 0;
+  }
+}
+
 @media (min-width: $desktop) {
   .interiors {
     padding: 35px;

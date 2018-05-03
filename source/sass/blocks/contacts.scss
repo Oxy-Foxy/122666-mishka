@@ -38,16 +38,18 @@
   }
 
   .contacts__heading {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     font-size: $main-fontsize + 28;
     line-height: $main-lineheight + 24;
+    position: relative;
   }
 
   .contacts__heading::after {
     content: "";
     position: absolute;
-    right: 50px;
+    top: 65px;
+    right: 0;
     width: 50px;
     height: 82px;
     background-image: url("../img/icon-flag.svg");
