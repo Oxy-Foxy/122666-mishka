@@ -1,7 +1,7 @@
 .best-item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .best-item__heading {
@@ -9,6 +9,7 @@
   font-size: $main-fontsize + 10;
   line-height: $main-lineheight + 6;
   color: $black;
+  margin-bottom: 4px;
 }
 
 .best-item__subheading {
@@ -21,7 +22,8 @@
 
 .best-item__description {
   margin: 0;
-  padding: 28px 0;
+  padding: 22px 0;
+  padding-bottom: 19px;
 }
 
 .best-item__image {

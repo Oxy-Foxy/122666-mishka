@@ -1,6 +1,9 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background-color: $white;
 }
 
 .page-header__logo {

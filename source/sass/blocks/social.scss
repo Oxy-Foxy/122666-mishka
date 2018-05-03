@@ -1,5 +1,5 @@
 .social {
-  padding: 26px 0;
+  padding: 24px 0;
   border-bottom: 1px solid $footer-border-color;
 }
 
@@ -13,9 +13,15 @@
   width: 30px;
   height: 30px;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 13px;
+}
+
+.social__item:nth-of-type(2) {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 
 .social__link {
   display: block;

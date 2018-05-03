@@ -16,6 +16,10 @@
   border-bottom: 1px solid $tiffany-darker;
 }
 
+.contact-items-row:first-of-type {
+  margin-bottom: 25px;
+}
+
 .contact-items-row:last-of-type .contact-items-row__right-cell {
   width: 142px;
   border-bottom: none;
