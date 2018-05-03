@@ -20,7 +20,7 @@
   .page-navigation__span {
     display: block;
     padding-right: 50px;
-    padding-top: 25px;
+    padding-top: 15px;
     font-weight: 400;
     order: 3;
     background-color: $bg-color-light-gray;
@@ -37,7 +37,7 @@
 
 
   .page-navigation__list:nth-of-type(1) .page-list__item {
-      padding-top: 25px;
+      padding-top: 15px;
       padding-bottom: 25px;
       font-size: $main-fontsize;
   }
@@ -56,4 +56,32 @@
     background-color: $bg-color-light-gray;
     border-top: 1px solid $header-border-color;
   }
+}
+
+@media (min-width: $desktop) {
+  .page-navigation__list:nth-of-type(2) {
+    order: 2;
+    padding-left: 0;
+  }
+
+  .page-navigation__list:nth-of-type(1) .page-list__item {
+    font-size: $main-fontsize + 2;
+    padding-top: 25px;
+  }
+
+  .page-navigation__list:nth-of-type(1) .page-list__item:nth-of-type(2) {
+    padding-left: 35px;
+    padding-right: 0;
+    border-left: 1px solid $header-border-color;
+  }
+
+  .page-navigation__list:nth-of-type(1) {
+    order: 0;
+    background-color: $white;
+  }
+
+  .page-navigation__span {
+    padding-top: 20px;
+  }
+
 }

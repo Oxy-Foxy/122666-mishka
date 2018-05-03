@@ -55,3 +55,15 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header__logo {
+    order: 1;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .page-header__logo-image {
+    margin: 0 auto;
+  }
+}
