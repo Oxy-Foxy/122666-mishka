@@ -18,6 +18,12 @@
 
 @media (min-width: $tablet) {
   .info-list {
+    margin-top: 372px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .info-list {
     margin-top: 350px;
     width: 1050px;
   }
