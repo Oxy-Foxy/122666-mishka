@@ -94,9 +94,18 @@
 
 @media (min-width: $desktop) {
   .goods-item {
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 315px;
-    justify-content: space-between;
+    min-height: 660px;
     padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .goods-item__right-column {
+    padding-top: 26px;
+    flex-grow: 1;
+    min-height: 174px;
   }
 
   .goods-item__image-link {
@@ -106,5 +115,20 @@
 
   .goods-item__item-description {
     margin-top: 0;
+  }
+
+  .goods-item__item-property {
+    font-size: $main-fontsize;
+    line-height: $main-lineheight + 6;
+    margin-bottom: 0;
+  }
+
+  .goods-item__item-name {
+    margin-bottom: 6px;
+  }
+
+  .goods-item__order {
+    padding-top: 26px;
+    padding-bottom: 24px;
   }
 }

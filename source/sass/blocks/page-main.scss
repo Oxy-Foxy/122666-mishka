@@ -40,8 +40,8 @@
 
 @media (min-width: $desktop) {
   .page-main__heading {
-    padding-top: 106px;
-    padding-bottom: 72px;
+    padding-top: 24px;
+    padding-bottom: 100px;
     font-size: $main-fontsize + 38;
     line-height: $main-lineheight + 31;
   }
@@ -58,6 +58,7 @@
 
   .page-main__manufacturing-process {
     flex-wrap: wrap;
+    align-content: flex-start;
     height: 454px;
   }
 }

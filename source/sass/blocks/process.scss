@@ -49,7 +49,6 @@
     width: 668px;
     height: 455px;
     background-image: url("../img/video-tablet@1x.jpg");
-    // margin-bottom: 40px;
   }
 
   .process__heading {
@@ -82,34 +81,41 @@
 
 @media (min-width: $desktop) {
   .process {
-    height: 590px;
+    height: 456px;
     width: 1050px;
     padding: 0;
+    margin-bottom: 100px;
   }
 
   .process__make-order {
     width: 230px;
     margin-left: 80px;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight - 10;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .process__heading {
     width: 230px;
     padding-left: 79px;
-    padding-top: 100px;
+    padding-top: 95px;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
   .process__text {
     width: 314px;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 79px;
     padding-bottom: 49px;
+    padding-right: 0;
     margin-bottom: 0;
   }
 
   .process__video-link {
-    width: 700px;
+    background-image: url("../img/video-desktop.jpg");
+    width: 683px;
     height: 454px;
   }
 }
