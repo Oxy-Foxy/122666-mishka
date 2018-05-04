@@ -38,3 +38,9 @@
     width: 222px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contact-items-row:first-of-type {
+    margin-bottom: 30px;
+  }
+}

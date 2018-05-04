@@ -32,6 +32,10 @@
 }
 
 @media (min-width: $desktop) {
+  .advantages {
+    padding-top: 85px;
+  }
+
   .advantages__heading {
     font-size: $main-fontsize + 38;
     line-height: $main-lineheight + 31;
