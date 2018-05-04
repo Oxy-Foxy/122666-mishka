@@ -65,16 +65,16 @@
   .personal-data-fieldset {
     display: flex;
     flex-direction: row;
-    padding-top: 68px;
+    padding-top: 48px;
   }
 
-  .personal-data-fieldset__fieldset {
+    .personal-data-fieldset__fieldset {
     display: flex;
   }
 
   .personal-data-fieldset__name {
     padding-top: 20px;
-    width: 167px;
+    width: 165px;
   }
 
   .personal-data-fieldset__name::after {
@@ -88,6 +88,7 @@
     flex-grow: 1;
     padding-top: 0;
     padding-bottom: 50px;
+    height: 204px;
   }
 
   .personal-data-fieldset__form-element {
@@ -96,11 +97,36 @@
 
   .personal-data-fieldset__input {
     flex-grow: 1;
+    padding-left: 18px;
+    height: 50px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+  ::-moz-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+  :-moz-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+  :-ms-input-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 
   .personal-data-fieldset__label {
     margin-right: 25px;
     padding-top: 20px;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 }
 

@@ -62,17 +62,18 @@
 @media (min-width: $tablet) {
   .order-form {
     padding-bottom: 50px;
+    padding-top: 0;
   }
 
   .order-form__textarea-fieldset {
     display: flex;
-    padding-top: 51px;
+    padding-top: 50px;
     height: 192px;
   }
 
   .order-form__textarea-label {
     width: 167px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 53px;
   }
 
@@ -82,22 +83,33 @@
 
   .order-form__textarea {
     flex-grow: 1;
-    padding-top: 15px;
+    padding-top: 13px;
     margin-bottom: 53px;
-    height: 141px;
+    height: 124px;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 
   .order-form__submit {
     display: flex;
     justify-content: space-between;
+    margin-top: 2px;
   }
 
   .order-form__footnote {
     order: 1;
+    margin: 0;
+    margin-top: 10px;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight + 6;
   }
 
   .order-form__order-btn {
+    width: 230px;
+    padding: 16px 0;
     margin: 0;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight - 8;
   }
 }
 

@@ -37,7 +37,9 @@
   .page-main__form-pretext {
     width: 668px;
     font-size: $main-fontsize + 2;
-    margin-bottom: 63px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    line-height: $main-lineheight + 6;
   }
 }
 

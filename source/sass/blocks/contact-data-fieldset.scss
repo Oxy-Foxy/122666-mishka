@@ -42,20 +42,21 @@
 @media (min-width: $tablet) {
   .contact-data-fieldset {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: $bg-color-gray;
   }
 
   .contact-data-fieldset__element {
     display: flex;
-    margin-bottom: 0;
-    height: 53px;
+    margin-bottom: 22px;
+    height: 54px;
   }
 
   .contact-data-fieldset__label--tel,
   .contact-data-fieldset__label--email {
     width: 167px;
     padding-top: 20px;
+
   }
 
   .contact-data-fieldset__label--tel::after,
@@ -65,7 +66,14 @@
 
   .contact-data-fieldset__input {
     flex-grow: 1;
+    width: 500px;
     background-color: transparent;
+    padding-left: 16px;
+    height: 54px;
+    margin-top: 0;
+    box-sizing: border-box;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 }
 

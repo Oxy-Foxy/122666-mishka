@@ -68,8 +68,36 @@
   }
 
   .color-fieldset__label {
+    font-size: $main-fontsize + 4;
     width: 167px;
-    padding-left: 82px;
+    padding-left: 78px;
+  }
+
+  .color-fieldset__label::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .color-fieldset__label[for="gray"],
+  .color-fieldset__label[for="black"],
+  .color-fieldset__label[for="orange"] {
+    width: 158px;
+    padding-left: 90px;
+  }
+
+  .color-fieldset__label[for="white"],
+  .color-fieldset__label[for="gray"],
+  .color-fieldset__label[for="black"],
+  .color-fieldset__label[for="tiffany"] {
+    margin-bottom: 25px;
+    height: 50px;
+  }
+
+  .color-fieldset__label[for="gray"]::before,
+  .color-fieldset__label[for="black"]::before,
+  .color-fieldset__label[for="orange"]::before {
+    left: 12px;
+    top: -14px;
   }
 
   .color-fieldset__label::before {
