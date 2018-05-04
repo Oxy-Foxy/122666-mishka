@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden;
   height: 74px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .contact-data-fieldset__input,
@@ -27,13 +27,15 @@
 
 .contact-data-fieldset__label--email::after {
   @include fieldset-type-line;
-  left: 81px;
+  width: 180px;
+  left: 112px;
 }
 
 .contact-data-fieldset__input {
-  height: 50px;
+  margin-top: 5px;
+  height: 47px;
   border: none;
-  border-bottom: 1px solid $black;
+  border-bottom: 2px solid $black;
   width: 100%;
 }
 

@@ -18,15 +18,15 @@
 }
 
 .type-fieldset__form {
-  padding-top: 37px;
-  padding-bottom: 14px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   padding-left: 62px;
   position: relative;
 }
 
 .type-fieldset__form-element {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .type-fieldset__label {
@@ -35,7 +35,7 @@
 
 .type-fieldset__label::before {
   @include custome-input;
-  
+
   border-radius: 50%;
 }
 

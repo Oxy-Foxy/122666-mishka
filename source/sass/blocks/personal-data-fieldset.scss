@@ -22,7 +22,7 @@
 }
 
 .personal-data-fieldset__form {
-  padding: 33px 0;
+  padding: 31px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,14 +30,35 @@
 }
 
 .personal-data-fieldset__input {
-  height: 50px;
+  height: 48px;
   border: none;
-  border-bottom: 1px solid $black;
+  border-bottom: 2px solid $black;
   width: 100%;
 }
 
+::-webkit-input-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+::-moz-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+:-moz-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+:-ms-input-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+
 .personal-data-fieldset__label {
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 @media (min-width: $tablet) {

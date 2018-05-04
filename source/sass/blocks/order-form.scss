@@ -1,4 +1,5 @@
 .order-form {
+  padding-top: 12px;
   font-size: $main-fontsize + 2;
   line-height: $main-lineheight - 6;
   font-weight: bold;
@@ -33,11 +34,14 @@
 
 .order-form__textarea {
   width: 241px;
+  height: 122px;
   padding: 0;
   padding-left: 15px;
   padding-top: 17px;
   margin: 0 auto;
   margin-bottom: 20px;
+  border: 2px solid $black;
+  resize: none;
 }
 
 .order-form__footnote {
