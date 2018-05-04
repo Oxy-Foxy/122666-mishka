@@ -59,7 +59,7 @@
   .goods-item {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 50px;
+    // padding-left: 50px;
     margin-bottom: 54px;
   }
 
@@ -68,7 +68,12 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-    padding-top: 28px;
+    padding-top: 24px;
+  }
+
+  .goods-item__order {
+    font-size: $main-fontsize + 2;
+    padding-bottom: 28px;
   }
 
   .goods-item__image-link {

@@ -25,7 +25,9 @@
 
 @media (min-width: $tablet) {
   .page-main__heading {
-    padding-top: 106px;
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 24;
+    padding-top: 30px;
     padding-bottom: 76px;
   }
 
