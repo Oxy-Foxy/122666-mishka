@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
   border-top: 1px solid $header-border-color;
 }
 
@@ -43,12 +43,12 @@
   color: $black;
   font-weight: bold;
   font-size: $main-fontsize + 2;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .goods-item__item-property {
   font-size: $main-fontsize - 2;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .goods-item__item-price {
