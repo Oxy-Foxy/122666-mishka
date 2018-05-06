@@ -35,6 +35,11 @@
     width: $tablet;
     background-image: url("../img/map-tablet@1x.jpg");
     margin-bottom: 55px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+     background-image: url("../img/map-tablet@2x.jpg");
+     background-size: 1150px auto;
+   }
   }
 
   .contacts__heading {
@@ -112,8 +117,13 @@
     width: 525px;
     left: 0;
     top: 73px;
-    background-image: url("../img/map-tablet@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
     margin: 0;
     order: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+     background-image: url("../img/map-desktop@2x.jpg");
+     background-size: 525px auto;
+    }
   }
 }
