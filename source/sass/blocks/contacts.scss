@@ -72,7 +72,7 @@
 
 @media (min-width: $desktop) {
   .contacts {
-    @include wrapper-tablet;
+    @include wrapper-desktop;
 
     display: flex;
     flex-direction: column;

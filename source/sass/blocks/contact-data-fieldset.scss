@@ -77,12 +77,12 @@
     width: 114px;
     padding-left: 61px;
   }
-
-  .contact-data-fieldset {
-    padding-right: 175px;
-  }
+  //
+  // .contact-data-fieldset {
+  //   padding-right: 175px;
+  // }
 
   .contact-data-fieldset__input {
-    width: 700px;
+    max-width: 700px;
   }
 }

@@ -126,8 +126,10 @@
   }
 
   .order-form__submit {
-    margin-left: 175px;
-    margin-right: 175px;
+    // margin-left: 175px;
+    // margin-right: 175px;
+    width: 700px;
+    margin: 0 auto;
   }
 
   .order-form__textarea {

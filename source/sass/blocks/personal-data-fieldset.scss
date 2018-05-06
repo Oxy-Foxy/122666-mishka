@@ -137,7 +137,7 @@
   }
 
   .personal-data-fieldset {
-    padding-right: 175px;
+    // padding-right: 175px;
     padding-top: 44px;
   }
 
@@ -150,5 +150,9 @@
 
   .personal-data-fieldset__label {
     padding-top: 18px;
+  }
+
+  .personal-data-fieldset__form {
+    max-width: 700px;
   }
 }

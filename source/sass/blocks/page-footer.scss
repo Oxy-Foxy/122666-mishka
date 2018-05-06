@@ -12,7 +12,9 @@
 }
 
 @media (min-width: $tablet) {
-  .page-footer {
+  .page-footer__wrapper {
+    @include wrapper-tablet;
+
     display: flex;
     justify-content: space-between;
     padding-bottom: 57px;
@@ -21,5 +23,14 @@
 
   .page-footer__image {
     display: block;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-footer__wrapper {
+    @include wrapper-desktop;
+
+    padding-bottom: 57px;
+    padding-top: 50px;
   }
 }
