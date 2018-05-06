@@ -23,12 +23,20 @@
     padding-top: 20px;
     font-weight: 400;
     order: 3;
-    background-color: $bg-color-gray;
+    // background-color: $bg-color-gray;
     flex-grow: 1;
     text-align: right;
     vertical-align: bottom;
     font-size: $main-fontsize;
     border-top: 1px solid $header-border-color;
+  }
+
+  .page-navigation__span--index {
+    background-color:  $bg-color-light-gray;
+  }
+
+  .page-navigation__span--other-pages {
+    background-color: $bg-color-gray;
   }
 
   .page-navigation__list:nth-of-type(1) {
@@ -53,7 +61,6 @@
   }
 
   .page-navigation__list:first-of-type {
-    background-color: $bg-color-gray;
     border-top: 1px solid $header-border-color;
   }
 }

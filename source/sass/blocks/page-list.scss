@@ -47,6 +47,14 @@
     padding-left: 50px;
   }
 
+  .page-list--index {
+    background-color: $bg-color-light-gray;
+  }
+
+  .page-list--other-pages {
+    background-color: $bg-color-gray;
+  }
+
   .page-list__item {
     padding-left: 0;
     padding-right: 35px;
@@ -71,7 +79,6 @@
   .page-list:nth-child(4) {
     display: flex;
     order: 3;
-    background-color: $bg-color-gray;
   }
 
   .page-list:nth-child(4) .page-list__item {
