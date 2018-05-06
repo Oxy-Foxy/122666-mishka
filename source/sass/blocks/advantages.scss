@@ -11,17 +11,10 @@
 }
 
 @media (min-width: $tablet) {
-  .advantages__heading {
-    padding-top: 60px;
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: $tablet) {
   .advantages {
     padding-top: 65px;
     padding-bottom: 84px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .advantages__heading {
@@ -34,6 +27,7 @@
 @media (min-width: $desktop) {
   .advantages {
     padding-top: 85px;
+    margin: 0 auto;
   }
 
   .advantages__heading {

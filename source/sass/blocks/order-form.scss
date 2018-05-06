@@ -53,10 +53,11 @@
 }
 
 .order-form__order-btn {
+  @include main-btn;
+
   background-color: white;
   box-shadow: none;
   margin: 0 auto;
-  @include main-btn;
 }
 
 @media (min-width: $tablet) {
@@ -126,8 +127,10 @@
   }
 
   .order-form__submit {
-    margin-left: 175px;
-    margin-right: 175px;
+    // margin-left: 175px;
+    // margin-right: 175px;
+    width: 700px;
+    margin: 0 auto;
   }
 
   .order-form__textarea {

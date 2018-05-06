@@ -1,6 +1,3 @@
-.personal-data-fieldset {
-}
-
 .personal-data-fieldset__fieldset {
   position: relative;
   overflow: hidden;
@@ -41,16 +38,19 @@
   font-size: $main-fontsize + 2;
   line-height: $main-lineheight - 6;
 }
+
 ::-moz-placeholder {
   color: $placeholder-color;
   font-size: $main-fontsize + 2;
   line-height: $main-lineheight - 6;
 }
+
 :-moz-placeholder {
   color: $placeholder-color;
   font-size: $main-fontsize + 2;
   line-height: $main-lineheight - 6;
 }
+
 :-ms-input-placeholder {
   color: $placeholder-color;
   font-size: $main-fontsize + 2;
@@ -68,7 +68,7 @@
     padding-top: 48px;
   }
 
-    .personal-data-fieldset__fieldset {
+  .personal-data-fieldset__fieldset {
     display: flex;
   }
 
@@ -106,16 +106,19 @@
     font-size: $main-fontsize + 4;
     line-height: $main-lineheight - 6;
   }
+
   ::-moz-placeholder {
     color: $placeholder-color;
     font-size: $main-fontsize + 4;
     line-height: $main-lineheight - 6;
   }
+
   :-moz-placeholder {
     color: $placeholder-color;
     font-size: $main-fontsize + 4;
     line-height: $main-lineheight - 6;
   }
+
   :-ms-input-placeholder {
     color: $placeholder-color;
     font-size: $main-fontsize + 4;
@@ -132,23 +135,21 @@
 
 @media (min-width: $desktop) {
   .personal-data-fieldset__name {
-    width: 175px;
-    text-align: center;
-  }
-
-  .personal-data-fieldset {
-    padding-right: 175px;
-    padding-top: 44px;
-  }
-
-  .personal-data-fieldset__name {
     text-align: left;
     width: 115px;
     padding-top: 18px;
     padding-left: 60px;
   }
 
+  .personal-data-fieldset {
+    padding-top: 44px;
+  }
+
   .personal-data-fieldset__label {
     padding-top: 18px;
+  }
+
+  .personal-data-fieldset__form {
+    max-width: 700px;
   }
 }

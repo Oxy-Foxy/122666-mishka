@@ -1,5 +1,5 @@
 
-.page-list:nth-child(4){
+.page-list:nth-child(4) {
   display: none;
 }
 
@@ -44,7 +44,14 @@
 @media (min-width: $tablet) {
   .page-list {
     display: flex;
-    padding-left: 50px;
+  }
+
+  .page-list--index {
+    background-color: $bg-color-light-gray;
+  }
+
+  .page-list--other-pages {
+    background-color: $bg-color-gray;
   }
 
   .page-list__item {
@@ -71,7 +78,6 @@
   .page-list:nth-child(4) {
     display: flex;
     order: 3;
-    background-color: $bg-color-gray;
   }
 
   .page-list:nth-child(4) .page-list__item {
