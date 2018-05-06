@@ -5,15 +5,12 @@
 .contact-items-row__left-cell {
   display: inline-block;
   width: 78px;
+  border-bottom: 1px solid $tiffany-darker;
 }
 
 .contact-items-row__right-cell {
   display: inline-block;
   width: 180px;
-}
-
-.contact-items-row__right-cell {
-  border-bottom: 1px solid $tiffany-darker;
 }
 
 .contact-items-row:first-of-type {

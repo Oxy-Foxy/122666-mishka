@@ -1,6 +1,3 @@
-.color-fieldset {
-}
-
 .color-fieldset__fieldset {
   position: relative;
   overflow: hidden;
@@ -76,6 +73,7 @@
   .color-fieldset__label::before {
     width: 48px;
     height: 48px;
+    left: -4px;
   }
 
   .color-fieldset__label[for="gray"],
@@ -98,10 +96,6 @@
   .color-fieldset__label[for="orange"]::before {
     left: 12px;
     top: -14px;
-  }
-
-  .color-fieldset__label::before {
-    left: -4px;
   }
 }
 

@@ -53,10 +53,11 @@
 }
 
 .order-form__order-btn {
+  @include main-btn;
+
   background-color: white;
   box-shadow: none;
   margin: 0 auto;
-  @include main-btn;
 }
 
 @media (min-width: $tablet) {

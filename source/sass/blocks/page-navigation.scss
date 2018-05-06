@@ -15,7 +15,7 @@
 @media (max-width: $tablet - 1) {
   .page-navigation {
     padding-left: 0;
-    padding-right: 0
+    padding-right: 0;
   }
 }
 
@@ -39,7 +39,7 @@
   }
 
   .page-navigation__span--index {
-    background-color:  $bg-color-light-gray;
+    background-color: $bg-color-light-gray;
   }
 
   .page-navigation__span--other-pages {
@@ -49,7 +49,6 @@
   .page-navigation__list:nth-of-type(1) {
     order: 2;
   }
-
 
   .page-navigation__list:nth-of-type(1) .page-list__item {
     padding-top: 15px;
@@ -87,7 +86,7 @@
   }
 
   .page-navigation__list:nth-of-type(2) .page-list__item:first-of-type {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .page-navigation__list:nth-of-type(2) .page-list__item:last-of-type {
