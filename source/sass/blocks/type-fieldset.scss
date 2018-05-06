@@ -73,18 +73,22 @@
     width: 48px;
     height: 48px;
     top: -18px;
-  }
-
-  .type-fieldset__label[for="accessory"]::before,
-  .type-fieldset__label[for="toy"]::before {
     left: -85px;
   }
 }
 
 @media (min-width: $desktop) {
   .type-fieldset__name {
-    width: 175px;
-    padding-top: 37px;
-    text-align: center;
+    width: 112px;
+    margin-left: 63px;
+  }
+
+  .type-fieldset__form {
+    padding-left: 76px;
+  }
+
+  .type-fieldset__label::before {
+    top: -16px;
+    left: -81px;
   }
 }

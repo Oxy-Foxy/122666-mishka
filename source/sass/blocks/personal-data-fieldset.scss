@@ -138,5 +138,17 @@
 
   .personal-data-fieldset {
     padding-right: 175px;
+    padding-top: 44px;
+  }
+
+  .personal-data-fieldset__name {
+    text-align: left;
+    width: 115px;
+    padding-top: 18px;
+    padding-left: 60px;
+  }
+
+  .personal-data-fieldset__label {
+    padding-top: 18px;
   }
 }

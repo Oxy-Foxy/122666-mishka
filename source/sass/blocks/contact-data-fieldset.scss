@@ -9,13 +9,11 @@
 }
 
 .contact-data-fieldset__input,
-.contact-data-fieldset__label--tel,
-.contact-data-fieldset__label--email {
+.contact-data-fieldset__label {
   display: block;
 }
 
-.contact-data-fieldset__label--tel,
-.contact-data-fieldset__label--email {
+.contact-data-fieldset__label {
   color: $tiffany;
   text-transform: uppercase;
   width: 62px;
@@ -52,15 +50,12 @@
     height: 54px;
   }
 
-  .contact-data-fieldset__label--tel,
-  .contact-data-fieldset__label--email {
+  .contact-data-fieldset__label {
     width: 167px;
     padding-top: 20px;
-
   }
 
-  .contact-data-fieldset__label--tel::after,
-  .contact-data-fieldset__label--email::after {
+  .contact-data-fieldset__label::after {
     display: none;
   }
 
@@ -78,10 +73,9 @@
 }
 
 @media (min-width: $desktop) {
-  .contact-data-fieldset__label--tel,
-  .contact-data-fieldset__label--email {
-    width: 175px;
-    text-align: center;
+  .contact-data-fieldset__label {
+    width: 114px;
+    padding-left: 61px;
   }
 
   .contact-data-fieldset {

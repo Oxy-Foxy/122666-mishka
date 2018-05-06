@@ -107,8 +107,8 @@
 
 @media (min-width: $desktop) {
   .color-fieldset__name {
-    width: 175px;
-    text-align: center;
+    width: 116px;
+    margin-left: 59px;
   }
 
   .color-fieldset__form {
@@ -117,5 +117,49 @@
 
   .color-fieldset__fieldset {
     height: 167px;
+  }
+
+  .color-fieldset__label[for="white"]::before {
+    left: -2px;
+    top: -17px;
+  }
+
+  .color-fieldset__label[for="gray"] {
+    padding-left: 92px;
+  }
+
+  .color-fieldset__label[for="tiffany"] {
+    padding-left: 110px;
+  }
+
+  .color-fieldset__label[for="tiffany"]::before {
+    left: 26px;
+    top: -15px;
+  }
+
+  .color-fieldset__label[for="black"] {
+    padding-left: 78px;
+  }
+
+  .color-fieldset__label[for="black"]::before {
+    left: -2px;
+    top: -17px;
+  }
+
+  .color-fieldset__label[for="pink"] {
+    padding-left: 102px;
+  }
+
+  .color-fieldset__label[for="pink"]::before {
+    left: 22px;
+    top: -14px;
+  }
+
+  .color-fieldset__label[for="orange"] {
+    padding-left: 98px;
+  }
+
+  .color-fieldset__label[for="orange"]::before {
+    left: 16px;
   }
 }
