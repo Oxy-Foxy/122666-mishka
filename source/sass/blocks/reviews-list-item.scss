@@ -1,9 +1,33 @@
 .reviews-list-item {
-  @include outline;
+  margin-bottom: 35px;
+}
+
+.reviews-list-item__review-text {
+  margin: 0;
+  margin-bottom: 25px;
+  line-height: $main-lineheight + 6;
+}
+
+.reviews-list-item__person-name {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet) {
+  .reviews-list-item {
+    margin-bottom: 52px;
+  }
+
+  .reviews-list-item__review-text {
+    margin-top: 50px;
+    margin-bottom: 56px;
+    font-size: $main-fontsize + 2;
+  }
 }
 
 @media (min-width: $desktop) {
   .reviews-list-item__review-text {
     padding-right: 100px;
+    margin-bottom: 40px;
   }
 }

@@ -1,3 +1,33 @@
 .copyright {
-  @include outline;
+  padding: 30px 0;
+}
+
+.copyright__span {
+  font-size: $main-fontsize + 4;
+  line-height: $main-lineheight - 6;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.copyright__link {
+  margin-top: -9px;
+  margin-right: 20px;
+}
+
+.copyright__image {
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    margin-top: 10px;
+    padding: 0;
+    height: 36px;
+    vertical-align: bottom;
+  }
+
+  .copyright__link {
+    margin-right: 0;
+    margin-left: 30px;
+  }
 }

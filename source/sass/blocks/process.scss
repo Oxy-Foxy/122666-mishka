@@ -1,9 +1,17 @@
 .process {
-  @include outline;
+  padding-bottom: 32px;
+  width: 260px;
+  margin: 0 auto;
+  border: 1px solid $header-border-color;
+  margin-bottom: 57px;
 }
 
 .process__heading {
   margin: 0;
+  padding-left: 90px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: $main-fontsize + 2;
 }
 
 .process__video-link {
@@ -14,7 +22,29 @@
   background-repeat: no-repeat;
 }
 
+.process__make-order {
+  @include main-btn;
+
+  width: 192px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+}
+
+.process__text {
+  padding-left: 34px;
+  margin-top: 24px;
+  margin-bottom: 26px;
+  width: 184px;
+  font-size: $main-fontsize - 2;
+}
+
 @media (min-width: $tablet) {
+  .process {
+    padding-bottom: 45px;
+    width: 668px;
+  }
+
   .process__video-link {
     width: 668px;
     height: 455px;
@@ -23,27 +53,69 @@
 
   .process__heading {
     order: 2;
+    padding-left: 105px;
+    padding-top: 34px;
+    padding-bottom: 0;
+    font-size: $main-fontsize + 5;
+    margin-bottom: 35px;
   }
 
   .process__text {
+    width: 668px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 40px;
     order: 3;
+    font-size: $main-fontsize;
+    line-height: $main-lineheight + 6;
+    margin-bottom: 35px;
   }
 
   .process__make-order {
     order: 4;
+    padding: 14px 38px;
+    width: 584px;
+    box-sizing: border-box;
   }
 }
 
-
 @media (min-width: $desktop) {
-  .process__heading,
-  .process__text,
+  .process {
+    height: 456px;
+    width: 1050px;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+
   .process__make-order {
-    width: 350px;
+    width: 230px;
+    margin-left: 80px;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight - 10;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .process__heading {
+    width: 230px;
+    padding-left: 79px;
+    padding-top: 95px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .process__text {
+    width: 314px;
+    padding-top: 30px;
+    padding-left: 79px;
+    padding-bottom: 49px;
+    padding-right: 0;
+    margin-bottom: 0;
   }
 
   .process__video-link {
-    width: 700px;
+    background-image: url("../img/video-desktop.jpg");
+    width: 683px;
     height: 454px;
   }
 }

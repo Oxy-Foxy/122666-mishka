@@ -1,3 +1,43 @@
 .order-modal {
-  @include outline;
+  padding: 0 30px;
+  padding-top: 27px;
+  padding-bottom: 30px;
+}
+
+.order-modal__size {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.order-modal__size-button {
+  padding: 16px 0;
+  width: 79px;
+  border: 1px solid $header-border-color;
+  background-color: $white;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.order-modal__size-button--checked {
+  padding: 16px 0;
+  width: 79px;
+  background-color: $white;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid $tiffany;
+}
+
+.order-modal__button {
+  @include main-btn;
+
+  width: 260px;
+  border: none;
+  background-color: $tiffany;
+  color: $white;
+  margin: 0 auto;
+  margin-top: 30px;
 }

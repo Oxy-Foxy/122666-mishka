@@ -1,7 +1,44 @@
 .advantages {
-  @include outline;
+  margin-bottom: 55px;
 }
 
 .advantages__heading {
   margin: 0;
+  padding: 30px 0;
+  padding-bottom: 0;
+  font-size: $main-fontsize + 10;
+  line-height: $main-lineheight + 6;
+}
+
+@media (min-width: $tablet) {
+  .advantages__heading {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .advantages {
+    padding-top: 65px;
+    padding-bottom: 84px;
+    margin: 0;
+  }
+
+  .advantages__heading {
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 26;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages {
+    padding-top: 85px;
+  }
+
+  .advantages__heading {
+    font-size: $main-fontsize + 38;
+    line-height: $main-lineheight + 31;
+    margin-left: 175px;
+  }
 }

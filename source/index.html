@@ -7,67 +7,69 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header wrapper">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Магазин Мишка" width="86" height="35">
-      </a>
+    <header class="page-header">
       <nav class="page-navigation">
+        <div class="page-header__logo wrapper">
+          <a href="#">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Магазин Мишка" width="86" height="35">
+          </a>
+          <button class="page-header__menu-toggle--opened"></button>
+        </div>
         <ul class="page-navigation__list page-list">
           <li class="page-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="page-list__items-catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="page-list__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="page-list__items-form" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="page-navigation__list page-list">
+          <li class="page-list__item">
+            <a class="page-list__items-search" href="search.html"><span>Поиск по сайту</span></a>
           </li>
           <li class="page-list__item">
-            <a href="search.html">Поиск по сайту</a>
+            <a class="page-list__items-cart" href="cart.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="page-navigation__list page-list">
+          <li class="page-list__item">
+            <a class="page-list__items-new" href="new-items.html">Новые поступления</a>
           </li>
           <li class="page-list__item">
-            <a href="cart.html">Корзина: пока пуста</a>
-          </li>
-          <li class="page-list__item">
-            <a href="new-items.html">Новые поступления</a>
-          </li>
-          <li class="page-list__item">
-            <a href="sale.html">Распродажа</a>
+            <a class="page-list__items-sale" href="sale.html">Распродажа</a>
           </li>
         </ul>
         <span class="page-navigation__span">Бесплатная доставка по России</span>
-        <button class="page-navigation__toggle-btn">o</button>
-        <button class="page-navigation__close-btn">x</button>
       </nav>
     </header>
-    <main class="page-main main wrapper">
+    <main class="page-main main">
       <h1 class="main__heading visually-hidden">Магазин "Мишка"</h1>
       <section class="main__info info">
-        <h2 class="info__heading">Милые штучки ручной работы для дома</h2>
-        <!-- <img class="info__bg-image" src="http://placehold.it/320x373" alt="Мишка"> -->
+        <h2 class="info__heading wrapper">Милые штуки ручной работы для дома</h2>
         <ul class="info__list info-list">
           <li class="info-list__interiors interiors">
-            <a class="" href="#">
+            <a class="wrapper" href="#">
               <span class="interiors__span">Предметы интерьера</span>
-              <img class="interiors__image" src="http://placehold.it/40x62" alt="Предметы интерьера">
             </a>
           </li>
           <li class="info-list__toys toys">
-            <a class="" href="#">
+            <a class="wrapper" href="#">
               <span class="toys__span">Детские игрушки</span>
-              <img class="toys__image" src="http://placehold.it/60x60" alt="Игрушки">
             </a>
           </li>
       </section>
-      <section class="main__best-item best-item">
+      <section class="main__best-item best-item  wrapper">
         <div class="best-item__header">
           <h2 class="best-item__heading">Вязаные корзинки</h2>
           <h3 class="best-item__subheading">Товар недели</h3>
         </div>
         <div class="best-item__content">
           <div class="best-item__content-description">
-            <p class="best-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+            <p class="best-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
             <table class="best-item__options options">
               <tr class="options__row options-row">
                 <td class="options-row__left-cell">Цвет:</td>
-                <td class="options-row__right-cell">"Тиффани"/серый</td>
+                <td class="options-row__right-cell">«Тиффани»/серый</td>
               </tr>
               <tr class="options__row options-row">
                 <td class="options-row__left-cell">Диаметр:</td>
@@ -79,43 +81,37 @@
               </tr>
             </table>
           </div>
-          <img class="best-item__image" src="http://placehold.it/260x315" alt="Корзинки вязаные">
+          <img class="best-item__image" src="img/triple-set-mobile@1x.jpg" alt="Корзинки вязаные">
           <div class="best-item__get-order">
             <span class="best-item__price">Цена: 990 руб.</span>
-            <a class="best-item__order main-btn" href="cart.html">Заказать</a>
+            <a class="best-item__order" href="cart.html">Заказать</a>
           </div>
         </div>
       </section>
-      <section class="main__advantages advantages">
-        <h2 class="advantages__heading">Коротко о нас</h2>
+      <section class="main__advantages advantages wrapper">
+        <h2 class="advantages__heading">Коротко о нас:</h2>
         <ul class="advantages__list advantages-list">
           <li class="advantages-list__item advantages-list-item">
-            <img class="advantages-list-item__image" src="http://placehold.it/32x37" alt="экологично">
-            <span class="advantages-list-item__advantage">Экологически чистые материалы</span>
+            <span class="advantages-list-item__advantage flower">Экологически чистые материалы</span>
           </li>
           <li class="advantages-list__item advantages-list-item">
-            <img class="advantages-list-item__image" src="http://placehold.it/42x27" alt="недорого">
-            <span class="advantages-list-item__advantage">Скандинавский стиль по российской цене</span>
+            <span class="advantages-list-item__advantage money">Скандинавский стиль по российской цене</span>
           </li>
           <li class="advantages-list__item advantages-list-item">
-            <img class="advantages-list-item__image" src="http://placehold.it/34x27" alt="количество лайков">
-            <span class="advantages-list-item__advantage">Увеличивает лайки на фотографиях</span>
+            <span class="advantages-list-item__advantage heart">Увеличивает лайки на фотографиях</span>
           </li>
           <li class="advantages-list__item advantages-list-item">
-            <img class="advantages-list-item__image" src="http://placehold.it/35x34" alt="с любовью">
-            <span class="advantages-list-item__advantage">Связано вручную с любовью и умилением</span>
+            <span class="advantages-list-item__advantage ball">Связано вручную с любовью и умилением</span>
           </li>
           <li class="advantages-list__item advantages-list-item">
-            <img class="advantages-list-item__image" src="http://placehold.it/55x23" alt="отечественное">
-            <span class="advantages-list-item__advantage">Поддержка отечественного производителя</span>
+            <span class="advantages-list-item__advantage rocket">Поддержка отечественного производителя</span>
           </li>
           <li class="advantages-list__item advantages-list-item">
-            <img class="advantages-list-item__image" src="http://placehold.it/33x32" alt="в упаковке">
-            <span class="advantages-list-item__advantage">Поставляется в подарочной упаковке</span>
+            <span class="advantages-list-item__advantage gift">Поставляется в подарочной упаковке</span>
           </li>
         </ul>
       </section>
-      <section class="main__reviews reviews">
+      <section class="main__reviews reviews wrapper">
         <div class="reviews__desktop-wrapper">
           <h2 class="reviews__heading">Отзывы</h2>
           <ul class="reviews__list reviews-list">
@@ -126,14 +122,14 @@
             </li>
           </ul>
           <div class="reviews__toggle">
-            <button class="reviews__prev-btn">prev</button>
-            <button class="reviews__next-btn">next</button>
+            <button class="reviews__prev-btn" aria-label="предыдущий отзыв"></button>
+            <button class="reviews__next-btn" aria-label="следующий отзыв"></button>
           </div>
-          <a class="reviews__write-review main-btn" href="reviews.html">Написать</a>
+          <a class="reviews__write-review" href="reviews.html">Написать</a>
         </div>
       </section>
       <section class="main__contacts contacts">
-        <div class="contacts__info-wrapper">
+        <div class="contacts__info-wrapper wrapper">
           <h2 class="contacts__heading">Контакты</h2>
           <div class="contacts__contact-items contact-items">
             <div class="contact-items__row contact-items-row">
@@ -142,47 +138,48 @@
             </div>
             <div class="contact-items__row contact-items-row">
               <span class="contact-items-row__left-cell">адрес:</span>
-              <span class="contact-items-row__right-cell"> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span class="contact-items-row__right-cell"> г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </div>
           </div>
         </div>
         <div class="contacts__map"></div>
-        <a class="contacts__feedback main-btn" href="feedback.html">Напишите нам</a>
+        <a class="contacts__feedback" href="feedback.html">Напишите нам</a>
       </section>
       <section class="main-modal">
-        <h2 class="main-modal__heading">Добавить в корзину</h2>
-        <span class="main-modal__span">Выберите размер:</span>
-        <form class="main-modal__order-modal order-modal" action="">
-          <input class="order-modal__input" type="radio" id="s" name="size">
-          <label class="order-modal__label" for="s"></label>
-          <button class="order-modal__size-button">s</button>
-          <input class="order-modal__input" type="radio" id="m" name="size">
-          <label class="order-modal__label" for="m"></label>
-          <button class="order-modal__size-button">m</button>
-          <input class="order-modal__input" type="radio" id="l" name="size">
-          <label class="order-modal__label" for="l"></label>
-          <button class="order-modal__size-button">l</button>
-          <button class="order-modal__button" type="submit">Добавить</button>
-        </form>
+        <div class="main-modal__container">
+          <h2 class="main-modal__heading">Добавить в корзину</h2>
+          <span class="main-modal__span">Выберите размер:</span>
+          <form class="main-modal__order-modal order-modal" action="">
+            <div class="order-modal__size">
+              <label class="order-modal__label visually-hidden" for="s"><input class="order-modal__input" type="radio" id="s" name="size" checked></label>
+              <button class="order-modal__size-button--checked">s</button>
+              <label class="order-modal__label visually-hidden" for="m"><input class="order-modal__input" type="radio" id="m" name="size"></label>
+              <button class="order-modal__size-button">m</button>
+              <label class="order-modal__label visually-hidden" for="l"><input class="order-modal__input" type="radio" id="l" name="size"></label>
+              <button class="order-modal__size-button">l</button>
+            </div>
+            <button class="order-modal__button" type="submit">Добавить</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer wrapper">
-      <img class="page-footer__image" src="http://placehold.it/102x34" alt="">
+      <img class="page-footer__image" src="img/logo-footer.png" alt="" width="103" height="37">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">i
+            <a class="social__link social__link--instagram" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">f
+            <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Твиттер</span>t
+              <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
@@ -190,7 +187,7 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__span">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="http://placehold.it/27x34" alt="HTML academy">
+          <img class="copyright__image" src="img/htmlacademy.svg" alt="HTML academy" height="35" width="27">
         </a>
       </div>
     </footer>

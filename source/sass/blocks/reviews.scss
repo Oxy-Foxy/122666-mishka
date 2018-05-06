@@ -1,23 +1,75 @@
 .reviews {
-  @include outline;
+  padding-bottom: 35px;
 }
 
 .reviews__heading {
   margin: 0;
+  margin-bottom: 22px;
+  font-size: $main-fontsize + 10;
+  line-height: $main-lineheight + 6;
+}
+
+.reviews__toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__prev-btn,
+.reviews__next-btn {
+  width: 132px;
+  margin-bottom: 37px;
+  height: 50px;
+  border: 1px solid $header-border-color;
+  box-shadow: none;
+  background-color: $white;
+}
+
+.reviews__prev-btn {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__next-btn {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__write-review {
+  @include main-btn;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {
   .reviews {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 67px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    position: relative;
   }
 
   .reviews__heading {
     order: 0;
+    padding-top: 75px;
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 26;
+    width: 185px;
   }
 
   .reviews__write-review {
+    font-size: $main-fontsize + 2;
+    position: absolute;
+    top: 77px;
+    right: 50px;
     order: 1;
+    width: 170px;
   }
 
   .reviews__list {
@@ -25,12 +77,41 @@
   }
 
   .reviews__toggle {
-    order: 4;
+    position: absolute;
+    bottom: 78px;
+    right: 52px;
+    order: 3;
+    width: 167px;
+  }
+
+  .reviews__prev-btn,
+  .reviews__next-btn {
+    border: none;
   }
 }
 
 @media (min-width: $desktop) {
+  .reviews {
+    padding-bottom: 83px;
+    background-position: 50px 10px;
+  }
+
   .reviews__desktop-wrapper {
     margin-left: 175px;
+    height: 454px;
+  }
+
+  .reviews__heading {
+    padding-top: 80px;
+    font-size: $main-fontsize + 38;
+    line-height: $main-lineheight + 31;
+  }
+
+  .reviews__write-review {
+    top: 87px;
+  }
+
+  .reviews__toggle {
+    bottom: 135px;
   }
 }

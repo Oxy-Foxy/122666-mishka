@@ -1,38 +1,119 @@
 .contacts {
-  @include outline;
+  padding-bottom: 40px;
 }
 
 .contacts__heading {
   margin: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: $main-fontsize + 3;
+  line-height: $main-lineheight + 6;
 }
 
 .contacts__map {
-  min-width: $mobile;
+  width: 100vw;
   height: 458px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.contacts__feedback {
+  @include main-btn;
+
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet) {
   .contacts__map {
+    left: -50px;
+    width: $tablet;
     background-image: url("../img/map-tablet@1x.jpg");
+    margin-bottom: 55px;
+  }
+
+  .contacts__heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 24;
+    position: relative;
+  }
+
+  .contacts__heading::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 50px;
+    height: 82px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  .contacts {
+    padding-bottom: 56px;
+  }
+
+  .contacts__feedback {
+    width: 230px;
   }
 }
 
 @media (min-width: $desktop) {
   .contacts {
+    @include wrapper-tablet;
+
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
+    height: 500px;
+    padding-top: 87px;
+    padding-bottom: 62px;
+  }
+
+  .contacts__heading {
+    font-size: $main-fontsize + 38;
+    line-height: $main-lineheight + 31;
+    padding-top: 73px;
+  }
+
+  .contacts__heading::after {
+    left: -110px;
+  }
+
+  .contacts__info-wrapper {
+    margin: 0;
+    padding: 0;
+    height: 335px;
+    width: 350px;
   }
 
   .contacts__info-wrapper,
   a.contacts__feedback {
     margin-left: 175px;
-    width: 350px;
+  }
+
+  a.contacts__feedback {
+    height: 24px;
+    margin-top: 71px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: $main-fontsize + 2;
   }
 
   .contacts__map {
     width: 525px;
+    left: 0;
+    top: 73px;
+    background-image: url("../img/map-tablet@1x.jpg");
+    margin: 0;
+    order: 1;
   }
 }

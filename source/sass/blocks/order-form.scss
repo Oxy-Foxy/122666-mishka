@@ -1,9 +1,19 @@
 .order-form {
-  @include outline;
+  padding-top: 12px;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+  font-weight: bold;
+  color: $black;
+  padding-bottom: 55px;
 }
 
 .order-form__fieldset {
   @include no-fieldset-style;
+}
+
+.order-form__textarea-fieldset {
+  position: relative;
+  overflow: hidden;
 }
 
 .order-form__textarea-label,
@@ -11,32 +21,108 @@
   display: block;
 }
 
+.order-form__textarea-label {
+  width: 62px;
+  color: $tiffany;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.order-form__textarea-label::after {
+  @include fieldset-type-line;
+}
+
+.order-form__textarea {
+  width: 241px;
+  height: 122px;
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 17px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 2px solid $black;
+  resize: none;
+}
+
+.order-form__footnote {
+  font-size: $main-fontsize - 1;
+  line-height: $main-lineheight - 10;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.order-form__order-btn {
+  background-color: white;
+  box-shadow: none;
+  margin: 0 auto;
+  @include main-btn;
+}
+
 @media (min-width: $tablet) {
+  .order-form {
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
   .order-form__textarea-fieldset {
     display: flex;
+    padding-top: 50px;
+    height: 192px;
   }
 
   .order-form__textarea-label {
     width: 167px;
+    margin-top: 15px;
+    margin-bottom: 53px;
+  }
+
+  .order-form__textarea-label::after {
+    display: none;
   }
 
   .order-form__textarea {
     flex-grow: 1;
+    padding-top: 13px;
+    margin-bottom: 53px;
+    height: 124px;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 
   .order-form__submit {
     display: flex;
     justify-content: space-between;
+    margin-top: 2px;
   }
 
   .order-form__footnote {
     order: 1;
+    margin: 0;
+    margin-top: 10px;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight + 6;
+  }
+
+  .order-form__order-btn {
+    width: 230px;
+    padding: 16px 0;
+    margin: 0;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight - 8;
   }
 }
 
 @media (min-width: $desktop) {
+  .order-form__textarea-fieldset {
+    height: 188px;
+    padding-top: 48px;
+  }
+
   .order-form__textarea-label {
-    width: 175px;
+    margin-bottom: 48px;
+    width: 114px;
+    padding-left: 61px;
   }
 
   .order-form__submit {
@@ -46,5 +132,6 @@
 
   .order-form__textarea {
     margin-right: 175px;
+    margin-bottom: 48px;
   }
 }

@@ -1,6 +1,59 @@
 .toys {
   background-color: $tiffany-darkerer;
-  color: $white;
+  padding: 28px 0;
+}
 
-  @include outline;
+.toys a {
+  display: flex;
+  color: $white;
+  text-decoration: none;
+  font-size: $main-fontsize + 4;
+  position: relative;
+}
+
+.toys__span {
+  width: 130px;
+}
+
+.toys__span::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -5px;
+  right: 27px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet) {
+  .toys a {
+    padding-left: 35px;
+    font-size: $main-fontsize + 5;
+    line-height: $main-lineheight + 6;
+    font-weight: bold;
+  }
+
+  .toys__span::after {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .toys {
+    padding: 26px 35px;
+  }
+
+  .toys a {
+     padding: 0;
+  }
+
+  .toys__span {
+    font-size: $main-fontsize  + 5;
+    line-height: $main-lineheight + 6;
+  }
+
+  .toys__span::after {
+    right: 0;
+  }
 }

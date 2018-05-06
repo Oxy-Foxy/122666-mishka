@@ -1,7 +1,5 @@
 .page-footer {
   background-color: $bg-color-gray;
-
-  @include outline;
 }
 
 .page-footer__image {
@@ -17,6 +15,8 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 57px;
+    padding-top: 50px;
   }
 
   .page-footer__image {

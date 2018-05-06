@@ -13,6 +13,7 @@
   padding-left: 0;
 }
 
+
 @mixin wrapper {
   padding: 0 30px;
   margin: 0 auto;
@@ -27,4 +28,37 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+@mixin main-btn {
+  display: block;
+  text-transform: uppercase;
+  font-size: $main-fontsize +3;
+  line-height: $main-lineheight - 4;
+  font-weight: bold;
+  width: 256px;
+  border: 2px solid $main-text-color;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $main-text-color;
+}
+
+@mixin fieldset-type-line {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 92px;
+  height: 1px;
+  width: 198px;
+  background-color: $tiffany-darker;
+}
+
+@mixin custome-input {
+  content: "";
+  position: absolute;
+  left: -62px;
+  top: -12px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $main-text-color;
 }

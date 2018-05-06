@@ -1,5 +1,9 @@
 .personal-data-fieldset {
-  @include outline;
+}
+
+.personal-data-fieldset__fieldset {
+  position: relative;
+  overflow: hidden;
 }
 
 .personal-data-fieldset__input,
@@ -7,18 +11,74 @@
   display: block;
 }
 
+.personal-data-fieldset__name {
+  width: 62px;
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.personal-data-fieldset__name::after {
+  @include fieldset-type-line;
+}
+
+.personal-data-fieldset__form {
+  padding: 31px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 251px;
+}
+
+.personal-data-fieldset__input {
+  height: 48px;
+  border: none;
+  border-bottom: 2px solid $black;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+::-moz-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+:-moz-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+:-ms-input-placeholder {
+  color: $placeholder-color;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 6;
+}
+
+.personal-data-fieldset__label {
+  padding-bottom: 0;
+}
+
 @media (min-width: $tablet) {
   .personal-data-fieldset {
     display: flex;
     flex-direction: row;
+    padding-top: 48px;
   }
 
-  .personal-data-fieldset__fieldset {
+    .personal-data-fieldset__fieldset {
     display: flex;
   }
 
   .personal-data-fieldset__name {
-    width: 167px;
+    padding-top: 20px;
+    width: 165px;
+  }
+
+  .personal-data-fieldset__name::after {
+    display: none;
   }
 
   .personal-data-fieldset__form {
@@ -26,6 +86,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
+    padding-top: 0;
+    padding-bottom: 50px;
+    height: 204px;
   }
 
   .personal-data-fieldset__form-element {
@@ -34,15 +97,58 @@
 
   .personal-data-fieldset__input {
     flex-grow: 1;
+    padding-left: 18px;
+    height: 50px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+  ::-moz-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+  :-moz-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+  :-ms-input-placeholder {
+    color: $placeholder-color;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+  }
+
+  .personal-data-fieldset__label {
+    margin-right: 25px;
+    padding-top: 20px;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 }
 
 @media (min-width: $desktop) {
   .personal-data-fieldset__name {
     width: 175px;
+    text-align: center;
   }
 
   .personal-data-fieldset {
-    margin-right: 175px;
+    padding-right: 175px;
+    padding-top: 44px;
+  }
+
+  .personal-data-fieldset__name {
+    text-align: left;
+    width: 115px;
+    padding-top: 18px;
+    padding-left: 60px;
+  }
+
+  .personal-data-fieldset__label {
+    padding-top: 18px;
   }
 }

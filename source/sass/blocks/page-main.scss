@@ -1,5 +1,4 @@
 .page-main {
-  @include outline;
 }
 
 .page-main__manufacturing-process {
@@ -9,16 +8,62 @@
 
 .page-main__heading {
   margin: 0;
+  font-size: $main-fontsize + 12;
+  line-height: $main-lineheight + 4;
+  text-align: center;
+  padding: 80px 0;
+  padding-top: 70px;
+  background-color: $bg-color-gray;
 }
 
-@media (min-width: $desktop) {
-  .page-main__manufacturing-process {
-    flex-wrap: wrap;
-    height: 454px;
+.page-main__form-pretext {
+  margin-top: 20px;
+  margin-bottom: 11px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  width: 262px;
+  font-size: $main-fontsize - 2;
+}
+
+@media (min-width: $tablet) {
+  .page-main__heading {
+    font-size: $main-fontsize + 28;
+    line-height: $main-lineheight + 24;
+    padding-top: 30px;
+    padding-bottom: 76px;
   }
 
   .page-main__form-pretext {
-    margin-left: 175px;
-    margin-right: 175px;
+    width: 668px;
+    font-size: $main-fontsize + 2;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    line-height: $main-lineheight + 6;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main__heading {
+    padding-top: 24px;
+    padding-bottom: 100px;
+    font-size: $main-fontsize + 38;
+    line-height: $main-lineheight + 31;
+  }
+
+  .page-main__form-pretext {
+    width: 700px;
+    font-size: $main-fontsize + 2;
+    line-height: $main-lineheight + 6;
+    margin: 0 auto;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .page-main__manufacturing-process {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 454px;
   }
 }

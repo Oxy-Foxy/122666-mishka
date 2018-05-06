@@ -1,6 +1,59 @@
 .interiors {
   background-color: $tiffany;
-  color: $white;
+  padding: 28px 0;
+}
 
-  @include outline;
+.interiors a {
+  display: flex;
+  color: $white;
+  text-decoration: none;
+  font-size: $main-fontsize + 4;
+  position: relative;
+}
+
+.interiors__span {
+  width: 130px;
+}
+
+.interiors__span::after {
+  content: "";
+  width: 40px;
+  height: 62px;
+  position: absolute;
+  top: -5px;
+  right: 36px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet) {
+  .interiors a {
+    padding-left: 35px;
+    font-size: $main-fontsize + 5;
+    line-height: $main-lineheight + 6;
+    font-weight: bold;
+  }
+
+  .interiors__span::after {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .interiors {
+    padding: 26px 35px;
+  }
+
+  .interiors a {
+     padding: 0;
+  }
+
+  .interiors__span {
+    font-size: $main-fontsize  + 5;
+    line-height: $main-lineheight + 6;
+  }
+
+  .interiors__span::after {
+    right: 0;
+  }
 }

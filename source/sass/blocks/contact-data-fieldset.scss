@@ -1,5 +1,11 @@
 .contact-data-fieldset {
-  @include outline;
+}
+
+.contact-data-fieldset__element {
+  position: relative;
+  overflow: hidden;
+  height: 74px;
+  margin-bottom: 34px;
 }
 
 .contact-data-fieldset__input,
@@ -7,26 +13,76 @@
   display: block;
 }
 
+.contact-data-fieldset__label {
+  color: $tiffany;
+  text-transform: uppercase;
+  width: 62px;
+}
+
+.contact-data-fieldset__label--tel::after {
+  @include fieldset-type-line;
+}
+
+.contact-data-fieldset__label--email::after {
+  @include fieldset-type-line;
+  width: 180px;
+  left: 112px;
+}
+
+.contact-data-fieldset__input {
+  margin-top: 5px;
+  height: 47px;
+  border: none;
+  border-bottom: 2px solid $black;
+  width: 100%;
+}
+
 @media (min-width: $tablet) {
+  .contact-data-fieldset {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: $bg-color-gray;
+  }
+
   .contact-data-fieldset__element {
     display: flex;
+    margin-bottom: 22px;
+    height: 54px;
   }
 
   .contact-data-fieldset__label {
     width: 167px;
+    padding-top: 20px;
+  }
+
+  .contact-data-fieldset__label::after {
+    display: none;
   }
 
   .contact-data-fieldset__input {
     flex-grow: 1;
+    width: 500px;
+    background-color: transparent;
+    padding-left: 16px;
+    height: 54px;
+    margin-top: 0;
+    box-sizing: border-box;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
   }
 }
 
 @media (min-width: $desktop) {
   .contact-data-fieldset__label {
-    width: 175px;
+    width: 114px;
+    padding-left: 61px;
   }
 
   .contact-data-fieldset {
-    margin-right: 175px;
+    padding-right: 175px;
+  }
+
+  .contact-data-fieldset__input {
+    width: 700px;
   }
 }

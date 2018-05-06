@@ -1,39 +1,165 @@
 .color-fieldset {
-  @include outline;
+}
+
+.color-fieldset__fieldset {
+  position: relative;
+  overflow: hidden;
+}
+
+.color-fieldset__name {
+  width: 62px;
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.color-fieldset__name::after {
+  @include fieldset-type-line;
+}
+
+.color-fieldset__form {
+  padding-top: 37px;
+  padding-left: 62px;
+  position: relative;
+}
+
+.color-fieldset__form-element {
+  position: relative;
 }
 
 .color-fieldset__label {
   display: block;
+  margin-bottom: 42px;
+}
+
+.color-fieldset__label::before {
+  @include custome-input;
 }
 
 @media (min-width: $tablet) {
   .color-fieldset {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $bg-color-gray;
   }
 
   .color-fieldset__fieldset {
     display: flex;
+    flex-direction: row;
+    height: 237px;
+    padding-top: 67px;
   }
 
   .color-fieldset__name {
     width: 167px;
   }
 
+  .color-fieldset__name::after {
+    display: none;
+  }
+
   .color-fieldset__form {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     height: 72px;
+    width: 500px;
+    padding: 0;
   }
 
   .color-fieldset__label {
-    width: 250px;
+    font-size: $main-fontsize + 4;
+    width: 167px;
+    padding-left: 78px;
+  }
+
+  .color-fieldset__label::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .color-fieldset__label[for="gray"],
+  .color-fieldset__label[for="black"],
+  .color-fieldset__label[for="orange"] {
+    width: 158px;
+    padding-left: 90px;
+  }
+
+  .color-fieldset__label[for="white"],
+  .color-fieldset__label[for="gray"],
+  .color-fieldset__label[for="black"],
+  .color-fieldset__label[for="tiffany"] {
+    margin-bottom: 25px;
+    height: 50px;
+  }
+
+  .color-fieldset__label[for="gray"]::before,
+  .color-fieldset__label[for="black"]::before,
+  .color-fieldset__label[for="orange"]::before {
+    left: 12px;
+    top: -14px;
+  }
+
+  .color-fieldset__label::before {
+    left: -4px;
   }
 }
 
 @media (min-width: $desktop) {
   .color-fieldset__name {
-    width: 175px;
+    width: 116px;
+    margin-left: 59px;
+  }
+
+  .color-fieldset__form {
+    width: 875px;
+  }
+
+  .color-fieldset__fieldset {
+    height: 167px;
+  }
+
+  .color-fieldset__label[for="white"]::before {
+    left: -2px;
+    top: -17px;
+  }
+
+  .color-fieldset__label[for="gray"] {
+    padding-left: 92px;
+  }
+
+  .color-fieldset__label[for="tiffany"] {
+    padding-left: 110px;
+  }
+
+  .color-fieldset__label[for="tiffany"]::before {
+    left: 26px;
+    top: -15px;
+  }
+
+  .color-fieldset__label[for="black"] {
+    padding-left: 78px;
+  }
+
+  .color-fieldset__label[for="black"]::before {
+    left: -2px;
+    top: -17px;
+  }
+
+  .color-fieldset__label[for="pink"] {
+    padding-left: 102px;
+  }
+
+  .color-fieldset__label[for="pink"]::before {
+    left: 22px;
+    top: -14px;
+  }
+
+  .color-fieldset__label[for="orange"] {
+    padding-left: 98px;
+  }
+
+  .color-fieldset__label[for="orange"]::before {
+    left: 16px;
   }
 }

@@ -1,10 +1,13 @@
 .contact-items {
-  @include outline;
+  line-height: $main-lineheight + 6;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet) {
   .contact-items {
     display: flex;
+    font-size: $main-fontsize + 2;
+    margin-bottom: 55px;
   }
 
   .contact-items-row {
@@ -14,6 +17,8 @@
 
 @media (min-width: $desktop) {
   .contact-items {
+
     flex-direction: column;
+    margin: 0;
   }
 }
