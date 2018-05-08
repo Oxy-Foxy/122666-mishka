@@ -156,17 +156,17 @@
         <div class="main-modal__container">
           <h2 class="main-modal__heading">Добавить в корзину</h2>
           <span class="main-modal__span">Выберите размер:</span>
-          <form class="main-modal__order-modal order-modal" action="">
+          <div class="main-modal__order-modal order-modal">
             <div class="order-modal__size">
-              <label class="order-modal__label visually-hidden" for="s"><input class="order-modal__input" type="radio" id="s" name="size" checked></label>
-              <button class="order-modal__size-button--checked">s</button>
-              <label class="order-modal__label visually-hidden" for="m"><input class="order-modal__input" type="radio" id="m" name="size"></label>
-              <button class="order-modal__size-button">m</button>
-              <label class="order-modal__label visually-hidden" for="l"><input class="order-modal__input" type="radio" id="l" name="size"></label>
-              <button class="order-modal__size-button">l</button>
+              <input class=" visually-hidden order-modal__input order-modal__input--s" type="radio" id="s" name="size">
+              <input class=" visually-hidden order-modal__input order-modal__input--m" type="radio" id="m" name="size">
+              <input class=" visually-hidden order-modal__input order-modal__input--l" type="radio" id="l" name="size" checked>
+              <label class="order-modal__label" for="s">s</label>
+              <label class="order-modal__label" for="m">m</label>
+              <label class="order-modal__label" for="l">l</label>
             </div>
-            <button class="order-modal__button" type="submit">Добавить</button>
-          </form>
+            <button class="order-modal__button" type="button">Добавить</button>
+          </div>
         </div>
       </section>
     </main>
