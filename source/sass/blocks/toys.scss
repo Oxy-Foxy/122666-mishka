@@ -1,6 +1,15 @@
 .toys {
   background-color: $tiffany-darkerer;
   padding: 28px 0;
+  vertical-align: bottom;
+}
+
+.toys:hover {
+  padding-bottom: 33px;
+}
+
+.toys:active .toys__span {
+  opacity: 0.5;
 }
 
 .toys a {
@@ -27,6 +36,11 @@
 }
 
 @media (min-width: $tablet) {
+  .toys{
+    display: inline-block;
+    width: 50%;
+  }
+
   .toys a {
     padding-left: 35px;
     font-size: $main-fontsize + 5;
@@ -41,11 +55,12 @@
 
 @media (min-width: $desktop) {
   .toys {
-    padding: 26px 35px;
+    padding: 26px 0;
+
   }
 
   .toys a {
-    padding: 0;
+    padding: 0 35px;
   }
 
   .toys__span {
@@ -54,6 +69,6 @@
   }
 
   .toys__span::after {
-    right: 0;
+    right: 35px;
   }
 }

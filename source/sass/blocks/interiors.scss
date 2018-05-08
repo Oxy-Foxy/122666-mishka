@@ -1,6 +1,15 @@
 .interiors {
   background-color: $tiffany;
   padding: 28px 0;
+  vertical-align: bottom;
+}
+
+.interiors:hover {
+  padding-bottom: 33px;
+}
+
+.interiors:active .interiors__span {
+  opacity: 0.5;
 }
 
 .interiors a {
@@ -9,6 +18,10 @@
   text-decoration: none;
   font-size: $main-fontsize + 4;
   position: relative;
+}
+
+.interiors:hover {
+  padding-bottom: 33px;
 }
 
 .interiors__span {
@@ -27,6 +40,11 @@
 }
 
 @media (min-width: $tablet) {
+  .interiors {
+    display: inline-block;
+    width: 50%;
+  }
+
   .interiors a {
     padding-left: 35px;
     font-size: $main-fontsize + 5;
@@ -41,11 +59,11 @@
 
 @media (min-width: $desktop) {
   .interiors {
-    padding: 26px 35px;
+    padding: 26px 0;
   }
 
   .interiors a {
-    padding: 0;
+    padding: 0 35px;
   }
 
   .interiors__span {
@@ -54,6 +72,6 @@
   }
 
   .interiors__span::after {
-    right: 0;
+    right: 35px;
   }
 }
