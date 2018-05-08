@@ -41,6 +41,47 @@
   line-height: $main-lineheight + 6;
 }
 
+.page-list__item a:hover,
+.page-list__item a:active {
+  color: $link-hover-color;
+}
+
+.page-list__item--search:hover .page-list__items-search::before {
+  background-image: url("../img/icon-search-tiffany.svg");
+}
+
+.page-list__item--cart:hover .page-list__items-cart::before {
+  background-image: url("../img/icon-cart-tiffany.svg");
+}
+
+.page-list__items-cart.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $link-down-color;
+}
+
+a.page-list__items-cart.disabled::before {
+  background-image: url("../img/icon-cart-disabled.svg");
+}
+
+.page-list__item--cart:hover a.page-list__items-cart.disabled::before {
+  background-image: url("../img/icon-cart-disabled.svg");
+}
+
+.page-list__items-search.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $link-down-color;
+}
+
+a.page-list__items-search.disabled::before {
+  background-image: url("../img/icon-search-disabled.svg");
+}
+
+.page-list__item--search:hover a.page-list__items-search.disabled::before {
+  background-image: url("../img/icon-cart-disabled.svg");
+}
+
 @media (min-width: $tablet) {
   .page-list {
     display: flex;
