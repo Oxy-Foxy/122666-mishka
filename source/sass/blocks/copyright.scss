@@ -12,10 +12,20 @@
 .copyright__link {
   margin-top: -9px;
   margin-right: 20px;
-}
-
-.copyright__image {
   display: block;
+  width: 30px;
+  height: 35px;
+  background-image: url("../img/htmlacademy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../img/htmlacademy-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {

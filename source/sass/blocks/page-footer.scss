@@ -23,7 +23,20 @@
 
   .page-footer__image {
     display: block;
+    width: 103px;
+    height: 37px;
+    background-image: url("../img/logo-footer.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
+
+    .page-footer__image:hover {
+        background-image: url("../img/logo-footer-hover.svg");
+    }
+
+    .page-footer__image:active {
+        opacity: 0.3;
+    }
 }
 
 @media (min-width: $tablet) {
