@@ -54,6 +54,15 @@
   margin: 0 auto;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    @include main-btn-hover;
+  }
+
+  &:active  {
+    opacity: 0.9;
+    color: $button-down-color;
+  }
 }
 
 .process__text {

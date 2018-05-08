@@ -50,6 +50,11 @@
   color: $main-text-color;
 }
 
+@mixin main-btn-hover {
+  background-color: $main-text-color;
+  color: $white;  
+}
+
 @mixin fieldset-type-line {
   content: "";
   position: absolute;

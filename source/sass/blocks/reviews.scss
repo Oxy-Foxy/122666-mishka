@@ -28,12 +28,28 @@
   background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-image: url("../img/icon-left-arrow-hover.svg");
+  }
+
+  &:active  {
+    background-image: url("../img/icon-left-arrow-down.svg");
+  }
 }
 
 .reviews__next-btn {
   background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-image: url("../img/icon-right-arrow-hover.svg");  
+  }
+
+  &:active  {
+    background-image: url("../img/icon-right-arrow-down.svg");
+  }
 }
 
 .reviews__write-review {
@@ -42,6 +58,15 @@
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
+
+  &:hover {
+    @include main-btn-hover;
+  }
+
+  &:active  {
+    opacity: 0.9;
+    color: $button-down-color;
+  }
 }
 
 @media (min-width: $tablet) {

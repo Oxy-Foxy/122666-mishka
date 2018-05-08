@@ -27,6 +27,15 @@
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    @include main-btn-hover;
+  }
+
+  &:active  {
+    opacity: 0.9;
+    color: $button-down-color;
+  }
 }
 
 @media (min-width: $tablet) {
