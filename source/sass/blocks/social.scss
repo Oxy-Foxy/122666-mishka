@@ -1,5 +1,7 @@
 .social {
   padding: 24px 0;
+  width: 260px;
+  margin: 0 auto;
   border-bottom: 1px solid $footer-border-color;
 }
 
@@ -73,6 +75,7 @@
 
 @media (min-width: $tablet) {
   .social {
+    margin: 0;
     margin-top: 8px;
     margin-left: 92px;
     padding: 0;
