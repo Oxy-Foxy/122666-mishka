@@ -5,6 +5,14 @@
   border: 1px solid $header-border-color;
   margin-bottom: 57px;
   position: relative;
+
+  &:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  }
+
+  &:active {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  }
 }
 
 .process__heading {
@@ -45,6 +53,15 @@
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.process__video-link:hover::after {
+    transform: scale(1.2);
+}
+
+.process__video-link:active::after {
+    transform: scale(0.8);
+    opacity: 0.8;
 }
 
 .process__make-order {
