@@ -23,6 +23,23 @@
   position: relative;
 }
 
+.color-fieldset__input--white:checked ~ .color-fieldset__label[for="white"]::after,
+.color-fieldset__input--gray:checked ~ .color-fieldset__label[for="gray"]::after,
+.color-fieldset__input--tiffany:checked ~ .color-fieldset__label[for="tiffany"]::after,
+.color-fieldset__input--black:checked ~ .color-fieldset__label[for="black"]::after,
+.color-fieldset__input--pink:checked ~ .color-fieldset__label[for="pink"]::after,
+.color-fieldset__input--orange:checked ~ .color-fieldset__label[for="orange"]::after {
+  position: absolute;
+  left: -52px;
+  top: -1px;
+  content: "";
+  width: 23px;
+  height: 13px;
+  border-left: 2px solid $black;
+  border-bottom: 2px solid $black;
+  transform: rotate(-45deg);
+}
+
 .color-fieldset__label {
   display: block;
   margin-bottom: 42px;
@@ -30,6 +47,14 @@
 
 .color-fieldset__label::before {
   @include custome-input;
+}
+
+.color-fieldset__label:hover::before {
+  border-color: $tiffany;
+}
+
+.color-fieldset__label:active::before {
+  border-color: $placeholder-color;
 }
 
 @media (min-width: $tablet) {
@@ -96,6 +121,30 @@
   .color-fieldset__label[for="orange"]::before {
     left: 12px;
     top: -14px;
+  }
+
+  .color-fieldset__input--white:checked ~ .color-fieldset__label[for="white"]::after,
+  .color-fieldset__input--gray:checked ~ .color-fieldset__label[for="gray"]::after,
+  .color-fieldset__input--tiffany:checked ~ .color-fieldset__label[for="tiffany"]::after,
+  .color-fieldset__input--black:checked ~ .color-fieldset__label[for="black"]::after,
+  .color-fieldset__input--pink:checked ~ .color-fieldset__label[for="pink"]::after,
+  .color-fieldset__input--orange:checked ~ .color-fieldset__label[for="orange"]::after {
+    width: 30px;
+    height: 16px;
+  }
+
+  .color-fieldset__input--white:checked ~ .color-fieldset__label[for="white"]::after,
+  .color-fieldset__input--tiffany:checked ~ .color-fieldset__label[for="tiffany"]::after,
+  .color-fieldset__input--pink:checked ~ .color-fieldset__label[for="pink"]::after {
+    left: 7px;
+    top: -1px;
+  }
+
+  .color-fieldset__input--gray:checked ~ .color-fieldset__label[for="gray"]::after,
+  .color-fieldset__input--black:checked ~ .color-fieldset__label[for="black"]::after,
+  .color-fieldset__input--orange:checked ~ .color-fieldset__label[for="orange"]::after {
+    left: 22px;
+    top: -1px;
   }
 }
 

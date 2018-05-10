@@ -35,6 +35,26 @@
   border-radius: 50%;
 }
 
+.type-fieldset__label:hover::before {
+  border-color: $tiffany;
+}
+
+.type-fieldset__label:active::before {
+  border-color: $placeholder-color;
+}
+
+.type-fieldset__input--accessory:checked ~ .type-fieldset__label[for="accessory"]::after,
+.type-fieldset__input--toy:checked ~ .type-fieldset__label[for="toy"]::after {
+  position: absolute;
+  left: -49px;
+  top: 1px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $tiffany;
+}
+
 @media (min-width: $tablet) {
   .type-fieldset {
     display: flex;
@@ -70,6 +90,14 @@
     height: 48px;
     top: -18px;
     left: -85px;
+  }
+
+  .type-fieldset__input--accessory:checked ~ .type-fieldset__label[for="accessory"]::after,
+  .type-fieldset__input--toy:checked ~ .type-fieldset__label[for="toy"]::after {
+    width: 21px;
+    height: 21px;
+    left: -69px;
+    top: -2px;
   }
 }
 

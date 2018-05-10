@@ -52,7 +52,7 @@
 
 @mixin main-btn-hover {
   background-color: $main-text-color;
-  color: $white;  
+  color: $white;
 }
 
 @mixin fieldset-type-line {
@@ -73,4 +73,5 @@
   width: 38px;
   height: 38px;
   border: 2px solid $main-text-color;
+  background-color: transparent;
 }
