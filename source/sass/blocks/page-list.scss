@@ -116,6 +116,7 @@ a.page-list__items-search.disabled::before {
   .page-list:nth-child(4) {
     display: flex;
     order: 3;
+    border-top: 1px solid $header-border-color;
   }
 
   .page-list:nth-child(4) .page-list__item {

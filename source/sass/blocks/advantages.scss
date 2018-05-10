@@ -4,7 +4,7 @@
 
 .advantages__heading {
   margin: 0;
-  padding: 30px 0;
+  padding-top: 28px;
   padding-bottom: 0;
   font-size: $main-fontsize + 10;
   line-height: $main-lineheight + 6;
@@ -12,7 +12,7 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    padding-top: 65px;
+    padding-top: 45px;
     padding-bottom: 84px;
     margin: 0 auto;
   }
@@ -26,7 +26,7 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    padding-top: 85px;
+    padding-top: 60px;
     margin: 0 auto;
   }
 

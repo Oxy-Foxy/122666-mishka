@@ -25,7 +25,6 @@
 
 .page-header__logo a {
   display: block;
-  // width: 212px;
   flex-grow: 1;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .page-header__menu-toggle--opened {
-
+  display: none;
   background-image: url("../img/icon-menu-close.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -86,8 +85,8 @@
     order: 1;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .page-header__logo-image {

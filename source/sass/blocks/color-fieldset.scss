@@ -31,10 +31,10 @@
 .color-fieldset__input--orange:checked ~ .color-fieldset__label[for="orange"]::after {
   position: absolute;
   left: -52px;
-  top: -1px;
+  top: -2px;
   content: "";
-  width: 23px;
-  height: 13px;
+  width: 22px;
+  height: 10px;
   border-left: 2px solid $black;
   border-bottom: 2px solid $black;
   transform: rotate(-45deg);

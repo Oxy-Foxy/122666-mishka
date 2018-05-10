@@ -1,5 +1,5 @@
 .info {
-  margin-bottom: 8px;
+  // margin-bottom: 8px;
   background-color: $bg-color-light-gray;
   // top: -20px;
 }
@@ -9,7 +9,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  height: 480px;
+  height: 490px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -22,7 +22,7 @@
   line-height: $main-lineheight + 6;
   font-weight: bold;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 70px;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@
   .info-wrapper {
     position: relative;
     @include wrapper-tablet;
-    height: 686px;
+    height: 670px;
     background-image: url("../img/hero-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -43,11 +43,23 @@
     }
   }
 
+  .info-wrapper::after {
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    content: "";
+    height: 30px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill-tablet.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
   .info__heading {
     width: 505px;
     font-size: $main-fontsize + 28;
     line-height: $main-lineheight + 26;
-    padding-top: 105px;
+    padding-top: 85px;
   }
 }
 
@@ -57,6 +69,7 @@
   }
 
   .info-wrapper {
+    height: 663px;
     @include wrapper-desktop;
 
     background-image: url("../img/hero-desktop@1x.jpg");
@@ -71,6 +84,12 @@
     width: 620px;
     font-size: $main-fontsize + 38;
     line-height: $main-lineheight + 31;
-    padding-top: 102px;
+    padding-top: 80px;
+  }
+
+  .info-wrapper::after {
+    bottom: -20px;
+    height: 37px;
+    background-image: url("../img/bg-zigzag-fill.svg");
   }
 }

@@ -44,7 +44,7 @@
   background-position: center;
 
   &:hover {
-    background-image: url("../img/icon-right-arrow-hover.svg");  
+    background-image: url("../img/icon-right-arrow-hover.svg");
   }
 
   &:active  {
@@ -124,11 +124,22 @@
   .reviews {
     padding-bottom: 83px;
     background-position: 50px 10px;
+    position: relative;
   }
 
   .reviews__desktop-wrapper {
     margin-left: 175px;
     height: 454px;
+  }
+
+  .reviews__desktop-wrapper::after {
+    position: absolute;
+    bottom: -15px;
+    left: 50px;
+    content: "";
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
   }
 
   .reviews__heading {

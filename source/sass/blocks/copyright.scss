@@ -22,17 +22,17 @@
   top: 20px;
   right: 39px;
   width: 30px;
-  height: 35px;
+  height: 50px;
   background-image: url("../img/htmlacademy.svg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
-.copyright__link:hover .copyright__link::after {
+.copyright__link:hover::after {
   background-image: url("../img/htmlacademy-hover.svg");
 }
 
-.copyright__link:active .copyright__link::after {
+.copyright__link:active::after {
   opacity: 0.3;
 }
 
@@ -40,7 +40,7 @@
 @media (min-width: $tablet) {
   .copyright {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 17px;
     padding: 0;
     height: 36px;
     vertical-align: bottom;
@@ -48,12 +48,20 @@
 
   .copyright__link {
     padding: 0;
-    padding-right: 39px;
+    padding-right: 29px;
     margin-right: 0;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 
   .copyright__link::after {
     top: -9px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    padding-right: 0;
+    margin-left: 45px;
   }
 }

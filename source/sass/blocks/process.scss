@@ -98,8 +98,8 @@
 
   .process__heading::before {
     position: absolute;
-    top: 47px;
-    left: 762px;
+    top: 492px;
+    left: 40px;
   }
 
   .process__video-link {
@@ -148,7 +148,7 @@
 
 @media (min-width: $desktop) {
   .process {
-    height: 456px;
+    height: 452px;
     width: 1050px;
     padding: 0;
     margin-bottom: 100px;
@@ -169,6 +169,11 @@
     padding-top: 95px;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+
+  .process__heading::before {
+    top: 47px;
+    left: 761px;
   }
 
   .process__text {
