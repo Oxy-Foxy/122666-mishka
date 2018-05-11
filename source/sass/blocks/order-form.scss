@@ -56,31 +56,31 @@
   }
 
   &:focus::-webkit-input-placeholder {
-    color:transparent;
+    color: transparent;
   }
 
   &:focus::-moz-placeholder {
-    color:transparent;
+    color: transparent;
   }
   // &:focus::-moz-placeholder {
-//   color:transparent;
-// }
+  //   color: transparent;
+  // }
 
   &:focus::-ms-input-placeholder {
-    color:transparent;
+    color: transparent;
   }
 
   &:active::-webkit-input-placeholder {
-    color:transparent;
+    color: transparent;
   }
 
   &:active::-moz-placeholder {
-    color:transparent;
+    color: transparent;
   }
   // &:active::-moz-placeholder { color:transparent; }
 
   &:active::-ms-input-placeholder {
-    color:transparent;
+    color: transparent;
   }
 }
 
@@ -103,7 +103,7 @@
     @include main-btn-hover;
   }
 
-  &:active  {
+  &:active {
     opacity: 0.9;
     color: $button-down-color;
   }

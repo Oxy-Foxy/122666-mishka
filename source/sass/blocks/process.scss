@@ -7,11 +7,11 @@
   position: relative;
 
   &:hover {
-    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -56,12 +56,12 @@
 }
 
 .process__video-link:hover::after {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .process__video-link:active::after {
-    transform: scale(0.8);
-    opacity: 0.8;
+  transform: scale(0.8);
+  opacity: 0.8;
 }
 
 .process__make-order {
@@ -76,7 +76,7 @@
     @include main-btn-hover;
   }
 
-  &:active  {
+  &:active {
     opacity: 0.9;
     color: $button-down-color;
   }

@@ -30,13 +30,13 @@
     background-repeat: no-repeat;
   }
 
-    .page-footer__image:hover {
-        background-image: url("../img/logo-footer-hover.svg");
-    }
+  .page-footer__image:hover {
+    background-image: url("../img/logo-footer-hover.svg");
+  }
 
-    .page-footer__image:active {
-        opacity: 0.3;
-    }
+  .page-footer__image:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {

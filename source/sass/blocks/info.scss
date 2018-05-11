@@ -33,6 +33,7 @@
 
   .info-wrapper {
     position: relative;
+
     @include wrapper-tablet;
     height: 670px;
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -70,6 +71,7 @@
 
   .info-wrapper {
     height: 663px;
+    
     @include wrapper-desktop;
 
     background-image: url("../img/hero-desktop@1x.jpg");

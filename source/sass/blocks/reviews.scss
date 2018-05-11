@@ -33,7 +33,7 @@
     background-image: url("../img/icon-left-arrow-hover.svg");
   }
 
-  &:active  {
+  &:active {
     background-image: url("../img/icon-left-arrow-down.svg");
   }
 }
@@ -47,7 +47,7 @@
     background-image: url("../img/icon-right-arrow-hover.svg");
   }
 
-  &:active  {
+  &:active {
     background-image: url("../img/icon-right-arrow-down.svg");
   }
 }
@@ -63,7 +63,7 @@
     @include main-btn-hover;
   }
 
-  &:active  {
+  &:active {
     opacity: 0.9;
     color: $button-down-color;
   }

@@ -39,7 +39,7 @@
     @include main-btn-hover;
   }
 
-  &:active  {
+  &:active {
     opacity: 0.9;
     color: $button-down-color;
   }

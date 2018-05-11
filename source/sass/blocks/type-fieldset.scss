@@ -119,6 +119,6 @@
   .type-fieldset__input--accessory:checked ~ .type-fieldset__label[for="accessory"]::after,
   .type-fieldset__input--toy:checked ~ .type-fieldset__label[for="toy"]::after {
     left: -65px;
-    top: 0px;
+    top: 0;
   }
 }
