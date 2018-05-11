@@ -1,33 +1,67 @@
 .copyright {
-  padding: 30px 0;
-}
-
-.copyright__span {
-  font-size: $main-fontsize + 4;
-  line-height: $main-lineheight - 6;
-  font-weight: bold;
-  margin-left: 20px;
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .copyright__link {
-  margin-top: -9px;
-  margin-right: 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: $main-fontsize + 4;
+  line-height: $main-lineheight - 6;
+  color: $black;
+  width: 156px;
+  padding: 30px 0;
+  padding-right: 29px;
 }
 
-.copyright__image {
-  display: block;
+.copyright__link::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 39px;
+  width: 30px;
+  height: 50px;
+  background-image: url("../img/htmlacademy.svg");
+  background-position: top;
+  background-repeat: no-repeat;
 }
+
+.copyright__link:hover::after {
+  background-image: url("../img/htmlacademy-hover.svg");
+}
+
+.copyright__link:active::after {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet) {
   .copyright {
-    margin-top: 10px;
+    margin: 0;
+    margin-top: 17px;
     padding: 0;
     height: 36px;
     vertical-align: bottom;
   }
 
   .copyright__link {
+    padding: 0;
+    padding-right: 29px;
     margin-right: 0;
-    margin-left: 30px;
+    margin-left: 40px;
+  }
+
+  .copyright__link::after {
+    top: -9px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    padding-right: 0;
+    margin-left: 45px;
   }
 }

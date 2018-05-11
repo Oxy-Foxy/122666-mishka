@@ -5,8 +5,21 @@
 .contact-items-row__left-cell {
   display: inline-block;
   width: 78px;
-  border-bottom: 1px solid $tiffany-darker;
 }
+
+.contact-items-row__right-cell--email {
+  border-bottom: 1px solid $tiffany-darker;
+
+  &:hover {
+    color: $tiffany-lighter;
+  }
+
+  &:active {
+    color: $tiffany-lighter;
+    opacity: 0.2;
+  }
+}
+
 
 .contact-items-row__right-cell {
   display: inline-block;

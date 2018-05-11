@@ -1,15 +1,32 @@
 .main-modal {
-  background-color: $white;
-  opacity: 0.7;
   display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+}
+
+.main-modal.js-modal-show {
+  display: block;
 }
 
 .main-modal__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: $white;
   padding-top: 36px;
-  padding-bottom: 16px;
+  height: 300px;
   max-width: 566px;
   border-top: 1px solid $placeholder-color;
   border-bottom: 1px solid $placeholder-color;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-modal__span,
@@ -28,4 +45,20 @@
 
 .main-modal__span {
   line-height: $main-lineheight + 6;
+}
+
+@media (min-width: $tablet) {
+  .main-modal__container {
+    border: 1px solid $placeholder-color;
+  }
+
+  .main-modal__heading {
+    width: 360px;
+    font-size: $main-fontsize + 15;
+    line-height: $main-lineheight + 33;
+  }
+
+  .main-modal__ {
+    font-size: $main-fontsize + 2;
+  }
 }

@@ -1,7 +1,6 @@
 .order-modal {
   padding: 0 30px;
   padding-top: 27px;
-  padding-bottom: 30px;
 }
 
 .order-modal__size {
@@ -11,24 +10,32 @@
   width: 260px;
 }
 
-.order-modal__size-button {
+.order-modal__label {
+  display: block;
   padding: 16px 0;
   width: 79px;
   border: 1px solid $header-border-color;
   background-color: $white;
   color: $black;
+  text-align: center;
   text-transform: uppercase;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 8;
   font-weight: bold;
 }
 
-.order-modal__size-button--checked {
-  padding: 16px 0;
-  width: 79px;
-  background-color: $white;
-  color: $black;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid $tiffany;
+.order-modal__label:hover {
+  border-color: $placeholder-color;
+}
+
+.order-modal__label:active {
+  border-color: $tiffany-darker;
+}
+
+.order-modal__input--s:checked ~ .order-modal__label[for="s"],
+.order-modal__input--m:checked ~ .order-modal__label[for="m"],
+.order-modal__input--l:checked ~ .order-modal__label[for="l"] {
+  border-color: $tiffany;
 }
 
 .order-modal__button {
@@ -40,4 +47,21 @@
   color: $white;
   margin: 0 auto;
   margin-top: 30px;
+  font-size: $main-fontsize + 2;
+  line-height: $main-lineheight - 8;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet) {
+  .order-modal__size {
+    width: 350px;
+  }
+
+  .order-modal__label {
+    width: 112px;
+  }
+
+  .order-modal__button {
+    width: 350px;
+  }
 }

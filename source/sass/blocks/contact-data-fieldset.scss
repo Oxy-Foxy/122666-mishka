@@ -5,6 +5,28 @@
   margin-bottom: 34px;
 }
 
+.contact-data-fieldset__tel {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 32px;
+  right: 30px;
+}
+
+.contact-data-fieldset__email {
+  position: absolute;
+  top: 38px;
+  right: 32px;
+  width: 32px;
+  height: 21px;
+  background-image: url("../img/icon-mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .contact-data-fieldset__input,
 .contact-data-fieldset__label {
   display: block;
@@ -14,6 +36,14 @@
   color: $tiffany;
   text-transform: uppercase;
   width: 62px;
+}
+
+.contact-data-fieldset__input--tel:hover ~ .contact-data-fieldset__tel {
+  background-image: url("../img/icon-phone-tiffany.svg");
+}
+
+.contact-data-fieldset__input--email:hover ~ .contact-data-fieldset__email {
+  background-image: url("../img/icon-mail-tiffany.svg");
 }
 
 .contact-data-fieldset__label--tel::after {
@@ -32,6 +62,46 @@
   border: none;
   border-bottom: 2px solid $black;
   width: 100%;
+
+  &:hover {
+    border-bottom-color: $tiffany;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+    color: $main-text-color;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
+  // &:focus::-moz-placeholder {
+  //   color: transparent;
+  // }
+
+  &:focus::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  &:active::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:active::-moz-placeholder {
+    color: transparent;
+  }
+  // &:active::-moz-placeholder { color:transparent; }
+
+  &:active::-ms-input-placeholder {
+    color: transparent;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -56,6 +126,16 @@
     display: none;
   }
 
+  .contact-data-fieldset__tel {
+    top: 14px;
+    right: 73px;
+  }
+
+  .contact-data-fieldset__email {
+    top: 19px;
+    right: 70px;
+  }
+
   .contact-data-fieldset__input {
     flex-grow: 1;
     width: 500px;
@@ -74,10 +154,16 @@
     width: 114px;
     padding-left: 61px;
   }
-  //
-  // .contact-data-fieldset {
-  //   padding-right: 175px;
-  // }
+
+  .contact-data-fieldset__tel {
+    top: 12px;
+    right: 235px;
+  }
+
+  .contact-data-fieldset__email {
+    top: 17px;
+    right: 230px;
+  }
 
   .contact-data-fieldset__input {
     max-width: 700px;

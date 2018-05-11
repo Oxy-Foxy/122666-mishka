@@ -31,6 +31,46 @@
   border: none;
   border-bottom: 2px solid $black;
   width: 100%;
+
+  &:hover {
+    border-bottom-color: $tiffany;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    font-size: $main-fontsize + 4;
+    line-height: $main-lineheight - 6;
+    color: $main-text-color;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
+  // &:focus::-moz-placeholder {
+  //   color: transparent;
+  // }
+
+  &:focus::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  &:active::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:active::-moz-placeholder {
+    color: transparent;
+  }
+  // &:active::-moz-placeholder { color:transparent; }
+
+  &:active::-ms-input-placeholder {
+    color: transparent;
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -44,12 +84,12 @@
   font-size: $main-fontsize + 2;
   line-height: $main-lineheight - 6;
 }
-
-:-moz-placeholder {
-  color: $placeholder-color;
-  font-size: $main-fontsize + 2;
-  line-height: $main-lineheight - 6;
-}
+//
+// :-moz-placeholder {
+//   color: $placeholder-color;
+//   font-size: $main-fontsize + 2;
+//   line-height: $main-lineheight - 6;
+// }
 
 :-ms-input-placeholder {
   color: $placeholder-color;
