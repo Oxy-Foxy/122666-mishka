@@ -9,6 +9,10 @@
   z-index: 1000;
 }
 
+.main-modal.js-modal-show {
+  display: block;
+}
+
 .main-modal__container {
   position: absolute;
   top: 0;
