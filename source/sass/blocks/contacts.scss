@@ -56,9 +56,11 @@
 
   .contacts__map {
     left: -50px;
-    width: $tablet;
+    width: 100vw;
     background-image: url("../img/map-tablet@1x.jpg");
     margin-bottom: 55px;
+    margin-left: 0;
+    margin-right: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
