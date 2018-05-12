@@ -8,6 +8,8 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var minify = require("gulp-scco");
 var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -21,6 +23,21 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(server.stream());
 });
+
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*/.{png, jpg, svg}")
+    .pipe(imagemin([imagemin.optipng({optimizationLevel: 3}),
+                    imagemin.jpgtran({progressive: true}),
+                    imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+})
+
+gilp.task("webp", function() {
+  return gulp.src("source/img/**/*/.{png, jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+})
 
 gulp.task("serve", ["style"], function() {
   server.init({
