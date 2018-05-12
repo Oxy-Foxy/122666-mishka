@@ -50,9 +50,9 @@
       <h1 class="page-main__heading">Вязание на заказ</h1>
       <p class="page-main__form-pretext wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="page-main__form order-form" action="https://echo.htmlacademy.ru">
-        <fieldset class="order-form__fieldset type-fieldset">
+        <div class="order-form__fieldset type-fieldset">
           <div class="type-fieldset__fieldset wrapper">
-            <legend class="type-fieldset__name">Тип</legend>
+            <span class="type-fieldset__name">Тип</span>
             <div class="type-fieldset__form">
               <div class="type-fieldset__form-element">
                 <input class="type-fieldset__input type-fieldset__input--accessory visually-hidden" type="radio" id="accessory" name="type" checked>
@@ -68,10 +68,10 @@
               </div>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="order-form__fieldset color-fieldset">
+        </div>
+        <div class="order-form__fieldset color-fieldset">
           <div class="color-fieldset__fieldset wrapper">
-            <legend class="color-fieldset__name">Цвет</legend>
+            <span class="color-fieldset__name">Цвет</span>
             <div class="color-fieldset__form">
               <div class="color-fieldset__form-element">
                 <input class="color-fieldset__input color-fieldset__input--white visually-hidden" type="checkbox" id="white" name="white" checked>
@@ -108,12 +108,13 @@
                 <label class="color-fieldset__label" for="orange">
                   Оранжевый
                 </label>
+              </div>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="order-form__fieldset personal-data-fieldset">
+        </div>
+        <div class="order-form__fieldset personal-data-fieldset">
           <div class="personal-data-fieldset__fieldset wrapper">
-            <legend class="personal-data-fieldset__name">фио</legend>
+            <span class="personal-data-fieldset__name">фио</span>
             <div class="personal-data-fieldset__form">
               <div class="personal-data-fieldset__form-element">
                 <label class="personal-data-fieldset__label" for="first-name">Имя:</label>
@@ -129,8 +130,8 @@
               </div>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="order-form__fieldset contact-data-fieldset">
+        </div>
+        <div class="order-form__fieldset contact-data-fieldset">
           <div class="contact-data-fieldset__element wrapper">
             <label class="contact-data-fieldset__label contact-data-fieldset__label--tel" for="phone-number">тел</label>
             <input class="contact-data-fieldset__input contact-data-fieldset__input--tel" type="tel" id="phone-number" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
@@ -141,7 +142,7 @@
             <input class="contact-data-fieldset__input contact-data-fieldset__input--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
             <div class="contact-data-fieldset__email"></div> <!-- добавила т.к. к предыдущему элементу не обратиться без js-->
           </div>
-        </fieldset>
+        </div>
         <div class="order-form__textarea-fieldset wrapper">
           <label class="order-form__textarea-label" for="details">доп</label>
           <textarea  class="order-form__textarea" id="details" name="details" cols="30" rows="5" placeholder="Опишите все ваши  пожелания к заказу"></textarea>

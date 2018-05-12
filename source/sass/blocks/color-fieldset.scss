@@ -1,6 +1,9 @@
 .color-fieldset__fieldset {
+  width: 260px;
   position: relative;
   overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .color-fieldset__name {
@@ -66,6 +69,7 @@
   }
 
   .color-fieldset__fieldset {
+    width: 668px;
     display: flex;
     flex-direction: row;
     height: 237px;
@@ -159,6 +163,7 @@
   }
 
   .color-fieldset__fieldset {
+    width: 1050px;
     height: 167px;
   }
 

@@ -1,8 +1,11 @@
 .contact-data-fieldset__element {
+  width: 260px;
   position: relative;
   overflow: hidden;
   height: 74px;
   margin-bottom: 34px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contact-data-fieldset__tel {
@@ -112,6 +115,7 @@
   }
 
   .contact-data-fieldset__element {
+    width: 668px;
     display: flex;
     margin-bottom: 22px;
     height: 54px;
@@ -150,6 +154,10 @@
 }
 
 @media (min-width: $desktop) {
+  .contact-data-fieldset__element {
+    width: 1050px;
+  }
+
   .contact-data-fieldset__label {
     width: 114px;
     padding-left: 61px;

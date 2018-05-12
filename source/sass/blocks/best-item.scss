@@ -5,6 +5,7 @@
   overflow: hidden;
   padding-top: 25px;
   position: relative;
+  width: 260px;
 }
 
 .best-item__content::after {
@@ -79,6 +80,7 @@
 @media (min-width: $tablet) {
   .best-item {
     padding-bottom: 70px;
+    width: 668px;
   }
 
   .best-item__header {
@@ -149,6 +151,7 @@
 
 @media (min-width: $desktop) {
   .best-item {
+    width: 1050px;
     position: relative;
     padding-bottom: 93px;
     min-height: 635px;

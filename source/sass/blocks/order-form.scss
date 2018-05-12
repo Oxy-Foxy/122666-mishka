@@ -9,9 +9,16 @@
 
 .order-form__fieldset {
   @include no-fieldset-style;
+
+  margin: 0 auto;
+}
+
+.order-form__submit {
+  width: 260px;
 }
 
 .order-form__textarea-fieldset {
+  width: 260px;
   position: relative;
   overflow: hidden;
 }
@@ -116,6 +123,7 @@
   }
 
   .order-form__textarea-fieldset {
+    width: 668px;
     display: flex;
     padding-top: 50px;
     height: 192px;
@@ -141,6 +149,7 @@
   }
 
   .order-form__submit {
+    width: 668px;
     display: flex;
     justify-content: space-between;
     margin-top: 2px;
