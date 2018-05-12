@@ -1,6 +1,9 @@
 .personal-data-fieldset__fieldset {
+  width: 260px;
   position: relative;
   overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .personal-data-fieldset__input,
@@ -109,6 +112,7 @@
   }
 
   .personal-data-fieldset__fieldset {
+    width: 668px;
     display: flex;
   }
 
@@ -174,6 +178,10 @@
 }
 
 @media (min-width: $desktop) {
+  .personal-data-fieldset__fieldset {
+    width: 1050px;
+  }
+
   .personal-data-fieldset__name {
     text-align: left;
     width: 115px;

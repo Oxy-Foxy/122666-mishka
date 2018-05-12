@@ -15,6 +15,7 @@
   .page-footer__wrapper {
     @include wrapper-tablet;
 
+    width: 668px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 57px;
@@ -39,10 +40,11 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .page-footer__wrapper {
     @include wrapper-desktop;
 
+    width: 1050px;
     padding-bottom: 57px;
     padding-top: 50px;
   }

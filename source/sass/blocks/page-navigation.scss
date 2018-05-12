@@ -22,6 +22,7 @@
 
 @media (min-width: $tablet) {
   .page-navigation {
+    width: 668px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +81,10 @@
 }
 
 @media (min-width: $desktop) {
+  .page-navigation {
+    width: 1050px;
+  }
+
   .page-navigation__list:nth-of-type(2) {
     order: 2;
     padding-left: 25px;

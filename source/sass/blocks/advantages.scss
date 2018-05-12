@@ -1,4 +1,5 @@
 .advantages {
+  width: 260px;
   margin-bottom: 55px;
 }
 
@@ -12,6 +13,7 @@
 
 @media (min-width: $tablet) {
   .advantages {
+    width: 668px;
     padding-top: 45px;
     padding-bottom: 84px;
     margin: 0 auto;
@@ -26,6 +28,7 @@
 
 @media (min-width: $desktop) {
   .advantages {
+    width: 1050px;
     padding-top: 60px;
     margin: 0 auto;
   }
