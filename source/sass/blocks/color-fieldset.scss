@@ -180,6 +180,10 @@
     top: -15px;
   }
 
+  .color-fieldset__input--tiffany:checked ~ .color-fieldset__label[for="tiffany"]::after {
+    left: 36px;
+  }
+
   .color-fieldset__label[for="black"] {
     padding-left: 78px;
   }
@@ -187,6 +191,10 @@
   .color-fieldset__label[for="black"]::before {
     left: -2px;
     top: -17px;
+  }
+
+  .color-fieldset__input--black:checked ~ .color-fieldset__label[for="black"]::after {
+    left: 9px;
   }
 
   .color-fieldset__label[for="pink"] {
@@ -198,11 +206,19 @@
     top: -14px;
   }
 
+  .color-fieldset__input--pink:checked ~ .color-fieldset__label[for="pink"]::after {
+    left: 32px;
+  }
+
   .color-fieldset__label[for="orange"] {
     padding-left: 98px;
   }
 
   .color-fieldset__label[for="orange"]::before {
     left: 16px;
+  }
+
+  .color-fieldset__input--orange:checked ~ .color-fieldset__label[for="orange"]::after {
+    left: 25px;
   }
 }
