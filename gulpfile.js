@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var minify = require("gulp-scco");
+var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -33,7 +33,7 @@ gulp.task("style", function() {
 gulp.task("images", function() {
   return gulp.src("source/img/**/*/.{png, jpg, svg}")
     .pipe(imagemin([imagemin.optipng({optimizationLevel: 3}),
-                    imagemin.jpgtran({progressive: true}),
+                    imagemin.jpegtran({progressive: true}),
                     imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -48,7 +48,7 @@ gulp.task("webp", function() {
 gulp.task("sprite", function() {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
-      inlinesvg: true;
+      inlinesvg: true
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -73,7 +73,7 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]);
 });
 
-gulp.task("copy" function() {
+gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
