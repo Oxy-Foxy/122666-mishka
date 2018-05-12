@@ -10,6 +10,9 @@ var minify = require("gulp-scco");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -31,13 +34,28 @@ gulp.task("images", function() {
                     imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
-})
+});
 
-gilp.task("webp", function() {
+gulp.task("webp", function() {
   return gulp.src("source/img/**/*/.{png, jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
-})
+});
+
+gulp.task("sprite", function() {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlinesvg: true;
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("html", function() {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([include()]))
+    .pipe(gulp.dest("source"));
+});
 
 gulp.task("serve", ["style"], function() {
   server.init({
