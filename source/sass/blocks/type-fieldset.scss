@@ -59,6 +59,11 @@
   background: $tiffany;
 }
 
+.type-fieldset__input--accessory:focus ~ .type-fieldset__label[for="accessory"]::before,
+.type-fieldset__input--toy:focus ~ .type-fieldset__label[for="toy"]::before {
+  outline: 3px solid #3399cc;
+}
+
 @media (min-width: $tablet) {
   .type-fieldset {
     display: flex;

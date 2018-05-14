@@ -39,7 +39,7 @@
   display: block;
   width: 260px;
   height: 150px;
-  background-image: url("../img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x_result.jpg");
   background-repeat: no-repeat;
 }
 
@@ -105,10 +105,10 @@
   .process__video-link {
     width: 668px;
     height: 455px;
-    background-image: url("../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x_result.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x_result.jpg");
       background-size: 668px auto;
     }
   }
@@ -186,12 +186,12 @@
   }
 
   .process__video-link {
-    background-image: url("../img/video-desktop.jpg");
+    background-image: url("../img/video-desktop@1x_result.jpg");
     width: 683px;
     height: 454px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x_result.jpg");
       background-size: 682px auto;
     }
   }

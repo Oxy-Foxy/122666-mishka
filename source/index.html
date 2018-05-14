@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -89,7 +92,14 @@
               </tr>
             </table>
           </div>
-          <img class="best-item__image" src="img/triple-set-mobile@1x.jpg" alt="Корзинки вязаные">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x_result.webp 1x, img/triple-set-desktop@2x_result.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x_result.webp 1x, img/triple-set-tablet@2x_result.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x_result.webp 1x, img/triple-set-mobile@2x_result.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x_result.jpg 1x, img/triple-set-desktop@2x_result.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x_result.jpg 1x, img/triple-set-tablet@2x_result.jpg 2x">
+            <img class="works-item__image" src="img/triple-set-mobile@1x_result.jpg" srcset="img/triple-set-mobile@2x_result.jpg 2x" alt="Корзинки вязаные">
+          </picture>
           <div class="best-item__get-order">
             <span class="best-item__price">Цена: 990 руб.</span>
             <a class="best-item__order js-modal-open" href="cart.html">Заказать</a>

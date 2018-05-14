@@ -174,8 +174,11 @@
 
 @media (min-width: $desktop) {
   .order-form__textarea-fieldset {
+    width: 1050px;
     height: 188px;
     padding-top: 48px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .order-form__textarea-label {
@@ -185,14 +188,15 @@
   }
 
   .order-form__submit {
-    // margin-left: 175px;
-    // margin-right: 175px;
     width: 700px;
     margin: 0 auto;
   }
 
   .order-form__textarea {
-    margin-right: 175px;
+    width: 700px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 48px;
+    flex-grow: 0;
   }
 }
