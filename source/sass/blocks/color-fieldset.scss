@@ -43,6 +43,15 @@
   transform: rotate(-45deg);
 }
 
+.color-fieldset__input--white:focus ~ .color-fieldset__label[for="white"]::before,
+.color-fieldset__input--gray:focus ~ .color-fieldset__label[for="gray"]::before,
+.color-fieldset__input--tiffany:focus ~ .color-fieldset__label[for="tiffany"]::before,
+.color-fieldset__input--black:focus ~ .color-fieldset__label[for="black"]::before,
+.color-fieldset__input--pink:focus ~ .color-fieldset__label[for="pink"]::before,
+.color-fieldset__input--orange:focus ~ .color-fieldset__label[for="orange"]::before {
+  outline: 3px solid #3399cc;
+}
+
 .color-fieldset__label {
   display: block;
   margin-bottom: 42px;
