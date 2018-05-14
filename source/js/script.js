@@ -10,8 +10,8 @@ for (i = 0; i < modalOpen.length; ++i) {
 
 window.addEventListener("keydown", function (e) {
   if (e.keyCode == 27) {
-  if (mainModal.classList.contains("js-modal-show")) {
-    mainModal.classList.remove("js-modal-show");
+    if (mainModal.classList.contains("js-modal-show")) {
+      mainModal.classList.remove("js-modal-show");
     }
   }
 });
